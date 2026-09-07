@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Palatető bontás és csere Budapesten | Banacraft</title>
+<meta name="description" content="Régi azbeszt hullámpala szakszerű bontása, előírásos elszállítása és új tetőfedés, egy kézből, engedéllyel. Önnek csak az időpontot kell egyeztetnie. Ingyenes felmérés Budapesten és vonzáskörzetében. +36 70 625 2014" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   BANACRAFT - Palateto BONTAS es CSERE (azbeszt hullampala)
+   Konverzio-fokuszu, foldiral CTA-val. Zold + ko + arany CTA.
+   Kepek helyere elegans "Itt lenne egy kep" helykitoltok.
+   ============================================================ */
+:root{
+  --stone-50:#F6F3EC; --stone-100:#EFEADE; --stone-200:#E4DCC9; --stone-300:#D6CBB2; --cream:#FBF9F3;
+  --pine-900:#122019; --pine-800:#16281F; --pine-700:#1C3527; --pine-600:#264636; --pine-500:#345744; --pine-400:#5A7C69;
+  --ink:#182019; --ink-soft:#3C463F; --ink-muted:#6B7269;
+  --gold:#C98A34; --gold-bright:#DCA043; --gold-dark:#AE7325;
+  --red-soft:#B4472E;
+  --line:rgba(24,32,25,.12); --line-on-dark:rgba(255,255,255,.14);
+  --shadow-sm:0 1px 2px rgba(18,32,25,.06),0 4px 14px rgba(18,32,25,.05);
+  --shadow-md:0 10px 30px rgba(18,32,25,.10),0 2px 8px rgba(18,32,25,.06);
+  --shadow-lg:0 24px 60px rgba(18,32,25,.16);
+  --r-sm:10px; --r-md:16px; --r-lg:24px; --r-xl:34px;
+  --maxw:1180px; --ease:cubic-bezier(.22,.61,.36,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--stone-50);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:-.01em;margin:0}
+p{margin:0}
+::selection{background:var(--gold);color:#fff}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.eyebrow{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-dark);display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block}
+.eyebrow.on-dark{color:var(--gold-bright)}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::before{display:none}
+section{position:relative}
+.section-pad{padding:clamp(64px,9vw,124px) 0}
+.section-head h2{font-size:clamp(2rem,3.6vw,3rem);margin-top:18px}
+.lead{font-size:1.16rem;color:var(--ink-soft);margin-top:22px;max-width:60ch}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;font-family:"Inter",sans-serif;font-weight:600;font-size:1rem;padding:16px 26px;border-radius:999px;border:1px solid transparent;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s;white-space:nowrap}
+.btn-gold{background:linear-gradient(180deg,var(--gold-bright),var(--gold));color:#241606;box-shadow:0 8px 22px rgba(174,115,37,.34),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(174,115,37,.5),inset 0 1px 0 rgba(255,255,255,.4)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-ghost.on-dark{color:#fff;border-color:var(--line-on-dark)}
+.btn-ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-lg{padding:19px 36px;font-size:1.08rem}
+.btn-xl{padding:22px 44px;font-size:1.18rem;font-weight:700}
+.pulse{animation:pulse 2.6s var(--ease) infinite}
+@keyframes pulse{0%,100%{box-shadow:0 8px 22px rgba(174,115,37,.34),inset 0 1px 0 rgba(255,255,255,.35)}50%{box-shadow:0 8px 22px rgba(174,115,37,.34),0 0 0 10px rgba(201,138,52,.12),inset 0 1px 0 rgba(255,255,255,.35)}}
+
+/* Header */
+.header{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .4s var(--ease),box-shadow .4s var(--ease),padding .4s var(--ease);padding:13px 0}
+.header.scrolled{background:rgba(251,249,243,.9);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:9px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;transition:color .4s}
+.header.scrolled .brand{color:var(--ink)}
+.brand-logo{height:40px;width:auto;display:block;transition:height .4s var(--ease)}
+.header.scrolled .brand-logo{height:34px}
+.brand .logo-dark{display:none}
+.header.scrolled .brand .logo-light{display:none}
+.header.scrolled .brand .logo-dark{display:block}
+.footer .brand-logo{height:40px}
+.brand-name{font-family:"Fraunces",serif;font-weight:600;font-size:1.28rem;letter-spacing:.01em}
+.nav-links{display:flex;align-items:center;gap:34px;margin:0 auto}
+.nav-links a{position:relative;font-size:.94rem;font-weight:500;color:rgba(255,255,255,.8);transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--gold-bright);border-radius:2px;transition:right .3s var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-links a:hover::after,.nav-links a.active::after{right:0}
+.header.scrolled .nav-links a{color:var(--ink-soft)}
+.header.scrolled .nav-links a:hover,.header.scrolled .nav-links a.active{color:var(--ink)}
+.header.scrolled .nav-links a::after{background:var(--gold-dark)}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.nav-phone{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.9);transition:color .4s}
+.header.scrolled .nav-phone{color:var(--ink)}
+.nav-phone svg{width:17px;height:17px}
+.burger{display:none;background:none;border:none;cursor:pointer;padding:8px;color:#fff}
+.header.scrolled .burger{color:var(--ink)}
+.burger svg{width:26px;height:26px}
+
+/* Hero - short, punchy, CTA above the fold */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate;
+  background:radial-gradient(120% 90% at 82% 8%,rgba(201,138,52,.22),transparent 46%),radial-gradient(100% 80% at 8% 100%,rgba(52,87,68,.55),transparent 60%),linear-gradient(155deg,var(--pine-800) 0%,var(--pine-900) 58%,#0d1913 100%)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(120% 100% at 70% 20%,#000,transparent 78%);mask-image:radial-gradient(120% 100% at 70% 20%,#000,transparent 78%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5;background:radial-gradient(140% 120% at 50% -10%,transparent 60%,rgba(9,17,13,.7) 100%)}
+.hero-inner{padding-top:96px;padding-bottom:40px;width:100%}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:stretch}
+.hero-copy{display:flex;flex-direction:column;justify-content:center}
+.hero-visual{display:flex}
+.hero-loc{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,.86);background:rgba(255,255,255,.07);border:1px solid var(--line-on-dark);padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.hero-loc svg{width:15px;height:15px;color:var(--gold-bright)}
+.hero h1{font-size:clamp(2.3rem,4.4vw,3.7rem);font-weight:500;margin:0;letter-spacing:-.02em}
+.hero h1 em{font-style:italic;color:var(--gold-bright);font-weight:400}
+.hero-sub{margin-top:16px;font-size:clamp(1.05rem,1.5vw,1.18rem);color:rgba(255,255,255,.82);max-width:36ch}
+.hero-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.hero-note{margin-top:22px;display:flex;align-items:center;gap:10px;font-size:.92rem;color:rgba(255,255,255,.72);font-weight:500}
+.hero-note svg{width:18px;height:18px;color:var(--gold-bright);flex:0 0 auto}
+.hero-stars{margin-top:16px;display:flex;align-items:center;gap:12px;font-size:.86rem;color:rgba(255,255,255,.7)}
+.hero-stars .stars{display:inline-flex;gap:2px;color:var(--gold-bright)}
+.hero-stars .stars svg{width:16px;height:16px}
+/* Hero photo placeholder */
+.hero-card{border:1px solid var(--line-on-dark);border-radius:var(--r-lg);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));padding:14px;box-shadow:var(--shadow-lg);backdrop-filter:blur(4px)}
+.ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:var(--ink-muted);background:var(--stone-100);border:1.5px dashed var(--stone-300);border-radius:14px;padding:26px}
+.ph svg{width:38px;height:38px;opacity:.5}
+.ph b{font-family:"Inter",sans-serif;font-weight:600;font-size:1rem;color:var(--ink-soft)}
+.ph small{font-size:.8rem;color:var(--ink-muted)}
+.ph.on-dark{color:rgba(255,255,255,.6);background:repeating-linear-gradient(45deg,rgba(255,255,255,.02),rgba(255,255,255,.02) 12px,transparent 12px,transparent 24px);border-color:rgba(255,255,255,.24)}
+.ph.on-dark b{color:rgba(255,255,255,.82)}
+.ph.on-dark small{color:rgba(255,255,255,.5)}
+.hero-ph{aspect-ratio:4/5}
+.hero-badge-row{display:flex;gap:10px;margin-top:12px}
+.hero-badge{flex:1;text-align:center;font-size:.72rem;font-weight:600;letter-spacing:.03em;padding:11px 8px;border-radius:12px;background:rgba(255,255,255,.06);border:1px solid var(--line-on-dark);color:rgba(255,255,255,.82)}
+
+/* Trust strip */
+.trust{background:var(--pine-900);color:#fff;border-top:1px solid rgba(255,255,255,.06)}
+.trust-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;padding:22px 0}
+.trust-item{display:flex;align-items:center;gap:12px;font-size:.92rem;color:rgba(255,255,255,.85)}
+.trust-item svg{width:22px;height:22px;color:var(--gold-bright);flex:0 0 auto}
+
+/* Problem */
+.problem{background:var(--cream)}
+.problem-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.problem-callout{margin-top:26px;padding:22px 24px;border-radius:var(--r-md);background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);box-shadow:var(--shadow-sm)}
+.problem-callout p{font-family:"Fraunces",serif;font-size:1.28rem;color:var(--pine-700);font-weight:500}
+.risk-list{list-style:none;padding:0;margin:8px 0 0}
+.risk-list li{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.risk-list li:last-child{border-bottom:none}
+.risk-ico{width:42px;height:42px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;background:var(--stone-100);color:var(--pine-600)}
+.risk-ico svg{width:22px;height:22px}
+.risk-list h4{margin:0 0 3px;font-family:"Inter",sans-serif;font-size:1rem;font-weight:600}
+.risk-list p{font-size:.94rem;color:var(--ink-muted)}
+
+/* Before / after photo band */
+.ba{background:var(--stone-50)}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.ba-item{}
+.ba-item .ph{aspect-ratio:16/11}
+.ba-label{margin-top:14px;display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink-soft)}
+.ba-label .tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--pine-600);padding:4px 10px;border-radius:999px}
+.ba-label .tag.after{background:var(--gold-dark)}
+
+/* Chain */
+.chain{background:var(--pine-900);color:#fff}
+.chain h2{color:#fff}
+.chain-headline{max-width:760px}
+.chain-headline .big{font-family:"Fraunces",serif;font-size:clamp(1.4rem,2.2vw,1.9rem);color:var(--gold-bright);font-weight:500;display:block;margin-top:20px}
+.chain-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:52px}
+.chain-item{position:relative;padding:26px 22px;border-radius:var(--r-md);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line-on-dark)}
+.chain-ico{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;margin-bottom:16px;background:rgba(201,138,52,.16);color:var(--gold-bright);border:1px solid rgba(201,138,52,.28)}
+.chain-ico svg{width:24px;height:24px}
+.chain-item h4{font-family:"Inter",sans-serif;font-size:1.02rem;font-weight:600;margin:0 0 6px}
+.chain-item p{font-size:.9rem;color:rgba(255,255,255,.7)}
+.chain-you{margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:18px;justify-content:space-between;padding:26px 30px;border-radius:var(--r-md);background:rgba(201,138,52,.12);border:1px solid rgba(201,138,52,.3)}
+.chain-you p{font-family:"Fraunces",serif;font-size:1.35rem;color:#fff}
+.chain-you span{color:var(--gold-bright)}
+
+/* Asbestos */
+.asb{background:var(--cream)}
+.asb-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.asb-steps{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.asb-step{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:24px;box-shadow:var(--shadow-sm)}
+.asb-step .n{font-family:"Fraunces",serif;color:var(--gold-dark);font-size:.95rem}
+.asb-step h4{font-family:"Inter",sans-serif;font-size:1.05rem;font-weight:600;margin:8px 0 6px}
+.asb-step p{font-size:.93rem;color:var(--ink-muted)}
+.asb-reassure{margin-top:26px;padding:20px 24px;border-radius:var(--r-md);background:var(--pine-700);color:#fff;display:flex;gap:14px;align-items:flex-start}
+.asb-reassure svg{width:22px;height:22px;color:var(--gold-bright);flex:0 0 auto;margin-top:2px}
+.asb-reassure p{font-size:.96rem;color:rgba(255,255,255,.88)}
+
+/* CTA band */
+.cta-band{background:linear-gradient(135deg,var(--pine-700),var(--pine-900));color:#fff;text-align:center}
+.cta-band .wrap{padding-top:clamp(56px,7vw,88px);padding-bottom:clamp(56px,7vw,88px)}
+.cta-band h2{font-size:clamp(1.9rem,3.4vw,2.8rem);color:#fff;max-width:20ch;margin:0 auto}
+.cta-band p{margin:18px auto 0;color:rgba(255,255,255,.78);font-size:1.1rem;max-width:44ch}
+.cta-band .btn{margin-top:32px}
+.cta-band .sub{margin-top:16px;font-size:.9rem;color:rgba(255,255,255,.6)}
+
+/* Pricing */
+.price{background:var(--stone-50)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:20px}
+.price-factors{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.price-factors li{display:flex;gap:10px;align-items:center;font-size:.96rem;color:var(--ink-soft);padding:6px 0;border-bottom:1px solid var(--line)}
+.price-factors svg{width:16px;height:16px;color:var(--gold-dark);flex:0 0 auto}
+.price-cards{display:grid;gap:18px}
+.price-card{border-radius:var(--r-md);padding:26px 28px;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.price-card.inc{background:#fff}
+.price-card.exc{background:var(--stone-100)}
+.price-card h4{font-family:"Inter",sans-serif;font-size:1.05rem;font-weight:600;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.price-card h4 svg{width:20px;height:20px}
+.price-card.inc h4 svg{color:var(--pine-600)}
+.price-card.exc h4 svg{color:var(--red-soft)}
+.price-card ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.price-card li{display:flex;gap:10px;align-items:flex-start;font-size:.95rem;color:var(--ink-soft)}
+.price-card li svg{width:16px;height:16px;flex:0 0 auto;margin-top:4px}
+.price-card.inc li svg{color:var(--pine-600)}
+.price-card.exc li svg{color:var(--red-soft)}
+.price-foot{margin-top:30px;text-align:center;font-size:1.05rem;color:var(--ink-soft)}
+.price-foot strong{color:var(--pine-700)}
+
+/* Process */
+.process{background:var(--pine-800);color:#fff;overflow:hidden}
+.process h2{color:#fff}
+.process .lead{color:rgba(255,255,255,.75)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:58px;position:relative}
+.steps::before{content:"";position:absolute;top:27px;left:10%;right:10%;height:2px;z-index:1;background:linear-gradient(90deg,rgba(201,138,52,0),var(--gold) 12%,var(--gold) 88%,rgba(201,138,52,0));opacity:.5}
+.step{position:relative;padding:0 18px;text-align:center}
+.step-num{width:54px;height:54px;margin:0 auto;border-radius:50%;display:grid;place-items:center;position:relative;z-index:2;font-family:"Fraunces",serif;font-size:1.3rem;color:#241606;background:linear-gradient(180deg,var(--gold-bright),var(--gold));box-shadow:0 8px 20px rgba(174,115,37,.35);border:4px solid var(--pine-800)}
+.step h4{margin:22px 0 8px;font-family:"Inter",sans-serif;font-size:1.05rem;font-weight:600}
+.step p{font-size:.9rem;color:rgba(255,255,255,.68)}
+
+/* Reviews */
+.reviews{background:var(--cream)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.rev-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:30px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.rev-stars{display:inline-flex;gap:3px;color:var(--gold);margin-bottom:16px}
+.rev-stars svg{width:20px;height:20px}
+.rev-card p{font-family:"Fraunces",serif;font-size:1.15rem;color:var(--ink);line-height:1.5;flex:1}
+.rev-who{margin-top:22px;display:flex;align-items:center;gap:12px}
+.rev-avatar{width:44px;height:44px;border-radius:50%;background:var(--stone-200);display:grid;place-items:center;color:var(--pine-600);flex:0 0 auto}
+.rev-avatar svg{width:22px;height:22px}
+.rev-who b{font-family:"Inter",sans-serif;font-size:.95rem;font-weight:600;display:block}
+.rev-who span{font-size:.82rem;color:var(--ink-muted)}
+.rev-note{margin-top:32px;text-align:center;font-size:.95rem;color:var(--ink-muted);font-style:italic}
+.rev-note strong{color:var(--pine-700);font-style:normal}
+
+/* Why us */
+.why{background:var(--stone-50)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-list{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:6px}
+.why-list li{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--line)}
+.why-list li:last-child{border-bottom:none}
+.why-check{width:34px;height:34px;flex:0 0 auto;border-radius:9px;display:grid;place-items:center;background:var(--pine-700);color:var(--gold-bright)}
+.why-check svg{width:18px;height:18px}
+.why-list h4{margin:0 0 3px;font-family:"Inter",sans-serif;font-size:1.04rem;font-weight:600}
+.why-list p{font-size:.92rem;color:var(--ink-muted)}
+.why-list .todo{color:var(--gold-dark);font-weight:600}
+.stat-panel{background:var(--pine-800);color:#fff;border-radius:var(--r-lg);padding:40px;box-shadow:var(--shadow-lg)}
+.stat-panel .eyebrow{margin-bottom:26px}
+.stat-row{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.stat b{font-family:"Fraunces",serif;font-size:2.6rem;font-weight:500;color:var(--gold-bright);display:block;line-height:1}
+.stat span{font-size:.9rem;color:rgba(255,255,255,.72);margin-top:8px;display:block}
+.stat b.fill{opacity:.4;letter-spacing:.1em}
+.stat-hint{margin-top:26px;font-size:.78rem;color:rgba(255,255,255,.45);border-top:1px solid var(--line-on-dark);padding-top:16px}
+
+/* Audience */
+.audience{background:var(--pine-900);color:#fff}
+.audience h2{color:#fff}
+.aud-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.aud-card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line-on-dark);border-radius:var(--r-md);padding:30px;transition:transform .35s var(--ease)}
+.aud-card:hover{transform:translateY(-4px)}
+.aud-ico{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;margin-bottom:20px;background:rgba(201,138,52,.16);color:var(--gold-bright);border:1px solid rgba(201,138,52,.28)}
+.aud-ico svg{width:27px;height:27px}
+.aud-card h3{font-size:1.3rem;color:#fff}
+.aud-card>p{margin-top:8px;color:rgba(255,255,255,.68);font-size:.95rem}
+.aud-card ul{list-style:none;padding:0;margin:16px 0 0}
+.aud-card li{display:flex;gap:9px;align-items:center;font-size:.92rem;color:rgba(255,255,255,.8);padding:5px 0}
+.aud-card li svg{width:16px;height:16px;color:var(--gold-bright);flex:0 0 auto}
+.aud-note{margin-top:30px;text-align:center;font-size:.98rem;color:rgba(255,255,255,.7);font-style:italic}
+.aud-note strong{color:var(--gold-bright);font-style:normal}
+
+/* References */
+.refs{background:var(--stone-50)}
+.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.ref-case{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
+.ref-photo{aspect-ratio:4/3;border-bottom:1.5px dashed var(--stone-300)}
+.ref-photo .ph{height:100%;border:none;border-radius:0;background:var(--stone-100)}
+.ref-body{padding:22px 24px}
+.ref-loc{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-dark)}
+.ref-body h4{font-family:"Inter",sans-serif;font-size:1.08rem;font-weight:600;margin:8px 0}
+.ref-line{display:flex;gap:8px;font-size:.9rem;color:var(--ink-muted);padding:3px 0}
+.ref-line b{color:var(--ink-soft);font-weight:600;flex:0 0 92px}
+.refs .rev-note{margin-top:34px}
+
+/* Contact */
+.contact{background:var(--pine-900);color:#fff}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:start}
+.contact h2{color:#fff}
+.contact-intro p{color:rgba(255,255,255,.78);margin-top:22px;font-size:1.05rem;max-width:40ch}
+.contact-facts{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:18px}
+.contact-facts li{display:flex;gap:14px;align-items:center;color:rgba(255,255,255,.9)}
+.contact-facts svg{width:20px;height:20px;color:var(--gold-bright);flex:0 0 auto}
+.contact-facts a:hover{color:var(--gold-bright)}
+.form-card{background:var(--cream);color:var(--ink);border-radius:var(--r-lg);padding:clamp(26px,3.5vw,42px);box-shadow:var(--shadow-lg)}
+.form-card h3{font-size:1.5rem;margin-bottom:6px}
+.form-card .form-int{color:var(--ink-muted);font-size:.95rem;margin-bottom:24px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.86rem;font-weight:600;margin-bottom:7px;color:var(--ink-soft)}
+.field label .req{color:var(--gold-dark)}
+.field label .opt{color:var(--ink-muted);font-weight:400}
+.field input,.field select,.field textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);padding:14px 16px;border-radius:var(--r-sm);border:1px solid var(--line);background:#fff;transition:border-color .25s,box-shadow .25s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,138,52,.14)}
+.field textarea{resize:vertical;min-height:100px}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.file-drop{display:flex;align-items:center;gap:14px;padding:16px;border:1.5px dashed var(--stone-300);border-radius:var(--r-sm);background:#fff;cursor:pointer;transition:border-color .25s}
+.file-drop:hover{border-color:var(--gold)}
+.file-drop svg{width:26px;height:26px;color:var(--pine-500);flex:0 0 auto}
+.file-drop-txt small{display:block;color:var(--ink-muted);font-size:.82rem}
+.file-drop input{display:none}
+.form-card .btn{width:100%;margin-top:6px}
+.form-consent{font-size:.78rem;color:var(--ink-muted);margin-top:14px;text-align:center}
+.form-success{display:none;text-align:center;padding:20px 0}
+.form-success.show{display:block}
+.form-success svg{width:54px;height:54px;color:var(--pine-600);margin:0 auto 14px}
+.form-success h3{font-size:1.5rem}
+.form-success p{color:var(--ink-muted);margin-top:8px}
+.hero-form{flex:1;display:flex;flex-direction:column;justify-content:center}
+.hero-form .js-quote-form{margin:auto 0}
+.hero-form .form-int{margin-bottom:18px}
+.hero-form .field{margin-bottom:14px}
+.hero-form .field textarea{min-height:74px}
+.hero-form h3{font-size:1.4rem}
+/* Choice pills (roof size etc.) */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;margin:0;cursor:pointer}
+.pill input{position:absolute;width:1px;height:1px;opacity:0}
+.pill span{display:inline-block;padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:.9rem;font-weight:600;color:var(--ink-soft);transition:border-color .2s,background .2s,color .2s}
+.pill span:hover{border-color:var(--gold)}
+.pill input:checked + span{background:var(--pine-700);border-color:var(--pine-700);color:#fff}
+.pill input:focus-visible + span{box-shadow:0 0 0 4px rgba(201,138,52,.16)}
+/* Quoting agent CTAs */
+.btn-agent{background:rgba(201,138,52,.12);color:var(--gold-dark);border-color:rgba(201,138,52,.42)}
+.btn-agent:hover{background:rgba(201,138,52,.2);transform:translateY(-2px)}
+.btn-agent.on-dark{background:rgba(255,255,255,.08);color:#fff;border-color:var(--line-on-dark)}
+.btn-agent.on-dark:hover{background:rgba(255,255,255,.15)}
+.btn-agent svg{width:19px;height:19px}
+.hero-agent{display:inline-flex;align-items:center;gap:9px;font-size:.92rem;font-weight:600;color:var(--gold-bright);border-bottom:1px dashed rgba(201,138,52,.55);padding-bottom:3px;cursor:pointer;line-height:1.2}
+.hero-agent svg{width:18px;height:18px;flex:0 0 auto}
+.hero-agent:hover{color:#fff;border-color:#fff}
+.cta-or{margin-top:26px;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.cta-band .btn-agent{margin-top:14px}
+.agent-callout{margin:34px auto 0;max-width:720px;display:flex;flex-wrap:wrap;align-items:center;gap:20px;text-align:left;background:linear-gradient(180deg,#fff,var(--cream));border:1px solid var(--line);border-radius:var(--r-md);padding:22px 26px;box-shadow:var(--shadow-sm)}
+.agent-callout .ac-ico{width:48px;height:48px;flex:0 0 auto;border-radius:13px;display:grid;place-items:center;background:var(--pine-700);color:var(--gold-bright)}
+.agent-callout .ac-ico svg{width:25px;height:25px}
+.agent-callout .ac-txt{flex:1;min-width:210px}
+.agent-callout .ac-txt b{display:block;font-family:"Inter",sans-serif;font-size:1.05rem;margin-bottom:3px}
+.agent-callout .ac-txt span{font-size:.92rem;color:var(--ink-muted)}
+.agent-callout .btn{white-space:nowrap}
+.agent-badge{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-dark);background:rgba(201,138,52,.14);border:1px solid rgba(201,138,52,.3);padding:4px 10px;border-radius:999px;margin-bottom:10px}
+/* Health danger section */
+.danger{background:var(--stone-50)}
+.danger-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.danger-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:28px;box-shadow:var(--shadow-sm)}
+.danger-card .d-ico{width:50px;height:50px;border-radius:13px;display:grid;place-items:center;background:rgba(184,60,50,.1);color:var(--red-soft);margin-bottom:16px}
+.danger-card .d-ico svg{width:26px;height:26px}
+.danger-card h4{font-family:"Inter",sans-serif;font-size:1.12rem;font-weight:600;margin-bottom:8px}
+.danger-card p{font-size:.94rem;color:var(--ink-muted)}
+.danger-facts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.danger-fact{display:inline-flex;align-items:center;gap:9px;font-size:.9rem;font-weight:600;color:var(--ink-soft);background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 18px}
+.danger-fact svg{width:18px;height:18px;color:var(--red-soft);flex:0 0 auto}
+.danger-note{max-width:820px;margin:36px auto 0;background:#fff;border:1px solid var(--line);border-left:4px solid var(--pine-600);border-radius:var(--r-md);padding:26px 30px;box-shadow:var(--shadow-sm);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px}
+.danger-note p{font-size:1rem;color:var(--ink-soft);flex:1;min-width:260px;margin:0}
+.danger-note strong{color:var(--pine-700)}
+.danger-note .btn{white-space:nowrap}
+.danger-src{max-width:820px;margin:18px auto 0;text-align:center;font-size:.8rem;color:var(--ink-muted);font-style:italic}
+
+/* Booking */
+.booking{background:var(--stone-50)}
+.booking-card{margin-top:44px;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-md);overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr}
+.booking-side{background:var(--pine-800);color:#fff;padding:clamp(28px,4vw,46px);display:flex;flex-direction:column;justify-content:center}
+.booking-side h3{color:#fff;font-size:1.7rem}
+.booking-side p{color:rgba(255,255,255,.76);margin-top:14px;font-size:.98rem}
+.booking-side ul{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.booking-side li{display:flex;gap:11px;align-items:center;font-size:.94rem;color:rgba(255,255,255,.88)}
+.booking-side svg{width:18px;height:18px;color:var(--gold-bright);flex:0 0 auto}
+.booking-widget{padding:clamp(28px,4vw,46px);display:flex;align-items:center;justify-content:center}
+.widget-slot{width:100%;min-height:340px;border-radius:var(--r-md);border:1.5px dashed var(--stone-300);background:var(--stone-100);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:30px;color:var(--ink-muted)}
+.widget-slot svg{width:40px;height:40px;color:var(--pine-500);opacity:.7}
+.widget-slot h4{font-family:"Inter",sans-serif;font-size:1.05rem;font-weight:600;color:var(--ink)}
+.widget-slot p{font-size:.86rem;max-width:32ch}
+.widget-days{display:flex;gap:8px;margin-top:6px}
+.widget-days span{width:34px;height:34px;border-radius:9px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-size:.8rem;font-weight:600;color:var(--ink-muted)}
+.widget-days span.on{background:var(--gold);color:#241606;border-color:var(--gold)}
+
+/* FAQ */
+.faq{background:var(--cream)}
+.faq-list{max-width:820px;margin:48px auto 0}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:none;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 4px;font-family:"Fraunces",serif;font-size:1.2rem;font-weight:500;color:var(--ink)}
+.faq-q .plus{width:30px;height:30px;flex:0 0 auto;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .35s var(--ease),background .3s,color .3s;color:var(--pine-600)}
+.faq-item.open .faq-q .plus{transform:rotate(45deg);background:var(--gold);color:#241606;border-color:var(--gold)}
+.faq-q .plus svg{width:16px;height:16px}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a-inner{padding:0 4px 24px;color:var(--ink-soft);font-size:1.02rem;max-width:66ch}
+.faq-a-inner a{color:var(--gold-dark);font-weight:600}
+.faq-a-inner .draft{color:var(--gold-dark);font-style:italic}
+
+/* Footer */
+.footer{background:var(--pine-900);color:rgba(255,255,255,.7);padding:64px 0 96px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.footer .brand{color:#fff}
+.footer-about{margin-top:18px;font-size:.92rem;color:rgba(255,255,255,.6);max-width:38ch}
+.footer h5{font-family:"Inter",sans-serif;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-bright);margin:0 0 18px;font-weight:600}
+.footer ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.footer a:hover{color:#fff}
+.footer-contact li{display:flex;gap:11px;align-items:flex-start;font-size:.94rem}
+.footer-contact svg{width:18px;height:18px;color:var(--gold-bright);flex:0 0 auto;margin-top:2px}
+.footer-bottom{margin-top:52px;padding-top:24px;border-top:1px solid var(--line-on-dark);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.82rem;color:rgba(255,255,255,.45)}
+
+/* Sticky mobile CTA */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(18,32,25,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line-on-dark)}
+.sticky-cta .btn{flex:1}
+.sticky-cta .btn-call{background:rgba(255,255,255,.1);color:#fff;border:1px solid var(--line-on-dark);flex:0 0 auto;padding-left:20px;padding-right:20px}
+
+/* Reveal + mobile nav */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.mobile-nav{position:fixed;inset:0;z-index:70;background:var(--pine-900);color:#fff;display:flex;flex-direction:column;padding:28px;transform:translateX(100%);transition:transform .4s var(--ease)}
+.mobile-nav.open{transform:none}
+.mobile-nav-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+.mobile-nav-top button{background:none;border:none;color:#fff;cursor:pointer;padding:8px}
+.mobile-nav-top svg{width:28px;height:28px}
+.mobile-nav a{font-family:"Fraunces",serif;font-size:1.6rem;padding:15px 0;border-bottom:1px solid var(--line-on-dark)}
+.mobile-nav .btn{margin-top:32px}
+
+/* Responsive */
+@media(max-width:960px){
+  .nav-links,.nav-phone{display:none}
+  .burger{display:inline-flex}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-card{max-width:420px}
+  .problem-grid,.why-grid,.contact-grid,.asb-grid,.price-grid,.ba-grid{grid-template-columns:1fr;gap:40px}
+  .chain-flow,.aud-grid,.ref-grid,.rev-grid,.danger-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:36px 18px}
+  .steps::before,.step::after{display:none}
+  .booking-card{grid-template-columns:1fr}
+  .sticky-cta{display:flex}
+  .footer{padding-bottom:110px}
+}
+@media(max-width:600px){
+  .wrap{padding:0 20px}
+  .chain-flow,.aud-grid,.ref-grid,.rev-grid,.steps,.stat-row,.field-row,.asb-steps,.price-factors,.danger-grid{grid-template-columns:1fr}
+  .hero-badge-row{flex-wrap:wrap}
+  .footer-grid{grid-template-columns:1fr;gap:34px}
+  .trust-inner{gap:14px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.pulse{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Banacraft főoldal">
+      <img class="brand-logo logo-light" src="logo-light.png" alt="Banacraft" width="660" height="200">
+      <img class="brand-logo logo-dark" src="logo-dark.png" alt="Banacraft" width="660" height="200">
+    </a>
+    <nav class="nav-links" aria-label="Fő navigáció">
+      <a href="#veszely">Miért veszélyes</a>
+      <a href="#folyamat">Mit intézünk</a>
+      <a href="#ar">Árazás</a>
+      <a href="#gyik">GYIK</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+36706252014" class="nav-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        +36 70 625 2014
+      </a>
+      <a href="#kapcsolat" class="btn btn-gold">Ingyenes felmérés</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menü">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav-top">
+    <span class="brand-name" style="color:#fff">Banacraft</span>
+    <button id="closeNav" aria-label="Bezárás"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg></button>
+  </div>
+  <a href="#veszely" class="mnav-link">Miért veszélyes</a>
+  <a href="#folyamat" class="mnav-link">Mit intézünk</a>
+  <a href="#ar" class="mnav-link">Árazás</a>
+  <a href="#gyik" class="mnav-link">GYIK</a>
+  <a href="tel:+36706252014" class="mnav-link">+36 70 625 2014</a>
+  <a href="#kapcsolat" class="btn btn-gold mnav-link">Kérem az ingyenes felmérést</a>
+</div>
+
+<span id="top"></span>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div class="hero-copy reveal">
+        <span class="hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Budapest és vonzáskörzete</span>
+        <h1>Régi hullámpala?<br><em>Lebontjuk Ön helyett.</em></h1>
+        <p class="hero-sub">Bontás, elszállítás és új tetőfedés, engedéllyel, egy kézből.</p>
+        <div class="hero-cta">
+          <a href="tel:+36706252014" class="btn btn-ghost on-dark btn-lg">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            +36 70 625 2014
+          </a>
+          <a class="hero-agent js-quote-agent" role="button" tabindex="0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg>
+            Azonnali becslés az asszisztenstől
+          </a>
+        </div>
+        <div class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Ingyenes felmérés, kötelezettség nélkül.
+        </div>
+        <div class="hero-stars">
+          <span class="stars">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg>
+          </span>
+          <span>Elégedett ügyfelek Budapesten <span style="opacity:.6">(példa)</span></span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="form-card hero-form">
+          <form class="js-quote-form" id="quoteFormHero" novalidate>
+            <h3>Ingyenes felmérés kérése</h3>
+            <p class="form-int">Pár adat elég. Aznap visszajelzünk, és egyeztetünk egy időpontot.</p>
+            <div class="field">
+              <label for="h-name">Név <span class="req">*</span></label>
+              <input type="text" id="h-name" name="name" placeholder="Az Ön neve" required>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="h-phone">Telefonszám <span class="req">*</span></label><input type="tel" id="h-phone" name="phone" placeholder="+36 ..." required></div>
+              <div class="field"><label for="h-city">Település <span class="req">*</span></label><input type="text" id="h-city" name="city" placeholder="pl. Budapest, XVIII." required></div>
+            </div>
+            <div class="field">
+              <label>Tető hozzávetőleges mérete <span class="req">*</span></label>
+              <div class="pills">
+                <label class="pill"><input type="radio" name="size" value="~50 m² alatt" required><span>~50 m² alatt</span></label>
+                <label class="pill"><input type="radio" name="size" value="50–150 m²"><span>50–150 m²</span></label>
+                <label class="pill"><input type="radio" name="size" value="150 m² felett"><span>150 m² felett</span></label>
+                <label class="pill"><input type="radio" name="size" value="Nem tudom"><span>Nem tudom</span></label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-gold btn-lg">Kérem az ingyenes felmérést</button>
+            <p class="form-consent">Nincs megrendelési kötelezettség. Adatait kizárólag a megkeresés megválaszolására használjuk.</p>
+          </form>
+          <div class="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Köszönjük!</h3>
+            <p>Megkaptuk a kérését, és aznap jelentkezünk a felmérés időpontjával.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg> Engedéllyel a veszélyes hulladék kezelésére</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Bontás, elszállítás és új tető egy kézből</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4" stroke-linecap="round"/></svg> Ingyenes felmérés, kötelezettség nélkül</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Budapest és kb. 50 km-es körzete</div>
+  </div>
+</div>
+
+<!-- ===================== PROBLÉMA ===================== -->
+<section class="problem section-pad" id="problema">
+  <div class="wrap">
+    <div class="problem-grid">
+      <div class="section-head reveal">
+        <span class="eyebrow">Régi a palatető?</span>
+        <h2>A hullámpala azbesztet tartalmazhat, és sokan nem is tudják.</h2>
+        <p class="lead">Amíg a pala sértetlen, a kockázat alacsonyabb. De ahogy öregszik, korrodál, vagy munka történik rajta, a szálak a levegőbe kerülhetnek.</p>
+        <div class="problem-callout"><p>Nem kell megvárni, míg gond lesz belőle. Előbb nézzük meg, aztán eldönthető, mi a teendő.</p></div>
+      </div>
+      <ul class="risk-list reveal">
+        <li>
+          <span class="risk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5M12 16h.01" stroke-linecap="round"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linejoin="round"/></svg></span>
+          <div><h4>Öregedés és korrózió</h4><p>Az idővel mállik a pala felülete, és a kötött szálak fellazulnak.</p></div>
+        </li>
+        <li>
+          <span class="risk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20 20 4M9 4h11v11" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Fúrás, bontás, mozgatás</h4><p>Bármilyen beavatkozás, akár egy csavar behajtása is, szálakat szabadíthat fel.</p></div>
+        </li>
+        <li>
+          <span class="risk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><path d="M9 11h6M12 8v6" stroke-linecap="round"/></svg></span>
+          <div><h4>Nagynyomású mosás</h4><p>A tető „felfrissítése" magasnyomású mosóval a legrosszabb, amit tehet vele.</p></div>
+        </li>
+        <li>
+          <span class="risk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 12h4l3 8 6-16 3 8h4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><h4>Beázás, törött pala</h4><p>A repedt vagy elmozdult elemek beáznak, és a bolygatásuk kockázatos.</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MIÉRT VESZÉLYES (EGÉSZSÉG) ===================== -->
+<section class="danger section-pad" id="veszely">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:720px;margin:0 auto">
+      <span class="eyebrow center" style="color:var(--red-soft)">Miért kell lecserélni?</span>
+      <h2>Az azbeszt bizonyítottan rákkeltő.</h2>
+      <p class="lead" style="margin:22px auto 0">Ezért akarják sokan eltávolítani a régi hullámpalát. A benne lévő azbesztszálak szabad szemmel nem láthatók, se szaguk, se ízük nincs. Ha a levegőbe kerülnek és belélegzik őket, akár évtizedekkel később súlyos betegséget okozhatnak.</p>
+    </div>
+    <div class="danger-grid">
+      <div class="danger-card reveal">
+        <div class="d-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v8" stroke-linecap="round"/><path d="M9 8.5C9 6 6.6 5.3 5.4 6.8 4.1 8.6 3.9 12 4.4 16c.2 1.6 1 2.9 2.6 2.9 1.5 0 2.7-1.2 2.7-2.9V9.6c0-.6-.4-1.1-.7-1.1Z" stroke-linejoin="round"/><path d="M15 8.5c0-2.5 2.4-3.2 3.6-1.7C19.9 8.6 20.1 12 19.6 16c-.2 1.6-1 2.9-2.6 2.9-1.5 0-2.7-1.2-2.7-2.9V9.6c0-.6.4-1.1.7-1.1Z" stroke-linejoin="round"/></svg></div>
+        <h4>Tüdőrák</h4>
+        <p>A belélegzett azbesztszálak a tüdőben megtapadva rosszindulatú daganat kialakulásához vezethetnek.</p>
+      </div>
+      <div class="danger-card reveal">
+        <div class="d-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="10.5" cy="11" r="2.2"/><circle cx="15" cy="14.5" r="1.3"/></svg></div>
+        <h4>Mezotelióma</h4>
+        <p>A mellhártya (és a hashártya) ritka, agresszív daganata, amit szinte kizárólag azbeszt okoz.</p>
+      </div>
+      <div class="danger-card reveal">
+        <div class="d-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 8h13a3 3 0 1 0-3-3" stroke-linecap="round"/><path d="M3 12h16a3 3 0 1 1-3 3" stroke-linecap="round"/><path d="M3 16h9" stroke-linecap="round"/></svg></div>
+        <h4>Azbesztózis</h4>
+        <p>A tüdőszövet krónikus hegesedése, ami tartós légzési nehézséget és fulladást okoz.</p>
+      </div>
+    </div>
+    <div class="danger-facts reveal">
+      <span class="danger-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01" stroke-linecap="round"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linejoin="round"/></svg> WHO/IARC 1. csoport: bizonyítottan rákkeltő</span>
+      <span class="danger-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8" stroke-linecap="round"/></svg> Nincs ismert biztonságos határérték</span>
+      <span class="danger-fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg> A tünetek gyakran csak évtizedekkel később jelentkeznek</span>
+    </div>
+    <div class="danger-note reveal">
+      <p><strong>A jó hír:</strong> amíg a pala ép és bolygatatlan, a kockázat alacsonyabb. A veszély akkor nő meg, ha a pala öregszik, mállik, eltörik, vagy ha fúrják, vágják, nagynyomással mossák. A biztos megoldás a szálak forrásának megszüntetése: szakszerű, engedéllyel végzett eltávolítás. Pontosan ezt csináljuk.</p>
+      <a href="#kapcsolat" class="btn btn-gold">Kérem az ingyenes felmérést</a>
+    </div>
+    <p class="danger-src reveal">Forrás: Egészségügyi Világszervezet (WHO) és a Nemzetközi Rákkutató Ügynökség (IARC). A fentiek általános tájékoztatás, nem az Ön konkrét tetejére vonatkozó szakvélemény.</p>
+  </div>
+</section>
+
+<!-- ===================== ELŐTTE / UTÁNA (fotó blokk) ===================== -->
+<section class="ba section-pad">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow center">Előtte / Utána</span>
+      <h2>A régi palától a kész tetőig.</h2>
+    </div>
+    <div class="ba-grid">
+      <div class="ba-item reveal">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b><small>Előtte: régi azbeszt hullámpala</small></div>
+        <div class="ba-label"><span class="tag">Előtte</span> Régi, elöregedett palatető</div>
+      </div>
+      <div class="ba-item reveal">
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b><small>Utána: új, vízzáró tetőfedés</small></div>
+        <div class="ba-label"><span class="tag after">Utána</span> Új, tiszta tetőfedés</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VÉLEMÉNYEK ===================== -->
+<section class="reviews section-pad" id="velemenyek">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow center">Vélemények</span>
+      <h2>Amit az ügyfeleink mondanak.</h2>
+    </div>
+    <div class="rev-grid">
+      <!-- PÉLDA VÉLEMÉNYEK: a valódi ügyfélvélemények ide kerülnek. -->
+      <article class="rev-card reveal">
+        <span class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg></span>
+        <p>„Példa vélemény: ide kerül egy valódi ügyfél rövid története a munkáról és az eredményről."</p>
+        <div class="rev-who"><span class="rev-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg></span><span><b>Példa Ügyfél</b><span>Budapest, példa kerület</span></span></div>
+      </article>
+      <article class="rev-card reveal">
+        <span class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg></span>
+        <p>„Példa vélemény: ide kerül egy valódi ügyfél rövid története a munkáról és az eredményről."</p>
+        <div class="rev-who"><span class="rev-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg></span><span><b>Példa Ügyfél</b><span>Budaörs, példa</span></span></div>
+      </article>
+      <article class="rev-card reveal">
+        <span class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .6-5.3 4.6 1.6 6.8L12 17.3 5.1 20.6l1.6-6.8L1.4 9.1l7-.6L12 2Z"/></svg></span>
+        <p>„Példa vélemény: ide kerül egy valódi ügyfél rövid története a munkáról és az eredményről."</p>
+        <div class="rev-who"><span class="rev-avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg></span><span><b>Példa Ügyfél</b><span>Pest vármegye, példa</span></span></div>
+      </article>
+    </div>
+    <p class="rev-note reveal">Ezek példa vélemények. <strong>Küldje meg a valódi ügyfélvéleményeket, és beemeljük ide.</strong></p>
+  </div>
+</section>
+
+<!-- ===================== ÖNNEK SEMMIT NEM KELL INTÉZNIE ===================== -->
+<section class="chain section-pad" id="folyamat">
+  <div class="wrap">
+    <div class="chain-headline reveal">
+      <span class="eyebrow on-dark">A teljes folyamat egy kézből</span>
+      <h2>Önnek csak az időpontot kell egyeztetnie.</h2>
+      <span class="big">A felméréstől a tiszta, kész tetőig mindent mi intézünk.</span>
+    </div>
+    <div class="chain-flow">
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4" stroke-linecap="round"/><path d="m9 15 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Helyszíni felmérés</h4><p>Megnézzük a tetőt és felmérjük az állapotát. Ingyen.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m3 21 4-1 11-11-3-3L4 17l-1 4Z" stroke-linejoin="round"/><path d="m14 6 3 3" stroke-linecap="round"/></svg></div><h4>Bontás</h4><p>A régi hullámpala óvatos, előírás szerinti elbontása.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h13l3 4v6H3z" stroke-linejoin="round"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg></div><h4>Rakodás &amp; elszállítás</h4><p>Becsomagoljuk, felrakodjuk és elszállítjuk. Önnek nem kell.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Hulladékkezelés</h4><p>Engedéllyel rendelkező helyre, előírás szerint ártalmatlanítva.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12 12 4l9 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11v8h14v-8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Új tetőfedés</h4><p>Ha kéri, azonnal beépítjük az újat. Nem marad nyitva a tető.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20s2-3 8-3 8 3 8 3" stroke-linecap="round"/><path d="m12 3 2 4 4 .5-3 3 .8 4.2L12 16l-3.8 1.7.8-4.2-3-3 4-.5Z" stroke-linejoin="round"/></svg></div><h4>Terület megtisztítása</h4><p>Tiszta, rendezett terület marad utánunk.</p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2" stroke-linejoin="round"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Dokumentáció</h4><p>Igazolást adunk a bontásról és az ártalmatlanításról. <span style="color:var(--gold-bright)">*egyeztetendő</span></p></div>
+      <div class="chain-item reveal"><div class="chain-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1" stroke-linecap="round"/><path d="m9 11 3 3L22 4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Átadás</h4><p>Kész, ellenőrzött tető a megbeszéltek szerint.</p></div>
+    </div>
+    <div class="chain-you reveal">
+      <p>Az Ön dolga: <span>egyetlen telefonhívás.</span></p>
+      <a href="#kapcsolat" class="btn btn-gold">Kérem az ingyenes felmérést</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AZBESZT ===================== -->
+<section class="asb section-pad" id="azbeszt">
+  <div class="wrap">
+    <div class="asb-grid">
+      <div class="section-head reveal">
+        <span class="eyebrow">Azbeszt &amp; hulladékkezelés</span>
+        <h2>Mi történik, ha a pala azbesztet tartalmaz?</h2>
+        <p class="lead">Nem ijesztgetünk. Elmondjuk pontosan. A régi azbesztcement pala kezelése szabályokhoz kötött, és ezt mi visszük végig, elejétől a végéig.</p>
+        <div class="asb-reassure">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>A veszélyes hulladék kezelésére <strong>saját engedélyünk van</strong>. Nem adjuk tovább alvállalkozónak, és a dokumentáció megfelel a hazai előírásoknak.</p>
+        </div>
+      </div>
+      <div class="asb-steps reveal">
+        <div class="asb-step"><div class="n">01</div><h4>Óvatos bontás</h4><p>A palát töréskímélő módon, a por- és szálképződés minimalizálásával bontjuk.</p></div>
+        <div class="asb-step"><div class="n">02</div><h4>Becsomagolás</h4><p>A leszedett elemeket a veszélyes hulladékra vonatkozó előírás szerint csomagoljuk.</p></div>
+        <div class="asb-step"><div class="n">03</div><h4>Elszállítás</h4><p>Felrakodjuk és elszállítjuk. Önnek konténert sem kell rendelnie.</p></div>
+        <div class="asb-step"><div class="n">04</div><h4>Ártalmatlanítás</h4><p>Kizárólag engedéllyel rendelkező, arra kijelölt helyre kerül.</p></div>
+        <div class="asb-step"><div class="n">05</div><h4>Dokumentáció</h4><p>Igazolást adunk a bontásról és az ártalmatlanításról. <span class="draft">*pontos tartalom egyeztetendő</span></p></div>
+        <div class="asb-step"><div class="n">06</div><h4>Ami az árban van</h4><p>A bontás, csomagolás, elszállítás és hulladékkezelés az ajánlat része.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<section class="cta-band">
+  <div class="wrap reveal">
+    <h2>Kérje az ingyenes helyszíni felmérést még ma.</h2>
+    <p>Aznap visszahívjuk, egyeztetünk egy időpontot, és utána tételes árajánlatot kap.</p>
+    <a href="#kapcsolat" class="btn btn-gold btn-xl pulse">Kérem az ingyenes felmérést</a>
+    <p class="sub">Kötelezettség nélkül. Vagy hívjon: +36 70 625 2014</p>
+    <div class="cta-or">vagy</div>
+    <a class="btn btn-agent on-dark js-quote-agent" role="button" tabindex="0">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg>
+      Kérjen azonnali becslést az online asszisztenstől
+    </a>
+  </div>
+</section>
+
+<!-- ===================== ÁRAZÁS ===================== -->
+<section class="price section-pad" id="ar">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:680px;margin:0 auto">
+      <span class="eyebrow center">Átlátható árazás</span>
+      <h2>Nem szeretjük a munka közbeni meglepetéseket.</h2>
+      <p class="lead" style="margin:22px auto 0">Minden tető más, ezért pontos árat a helyszíni felmérés után adunk. De előre megmutatjuk, mitől függ, és mi tartozik bele.</p>
+    </div>
+    <div class="agent-callout reveal">
+      <div class="ac-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg></div>
+      <div class="ac-txt">
+        <span class="agent-badge">Online becslő asszisztens</span>
+        <b>Kíváncsi egy hozzávetőleges összegre már most?</b>
+        <span>Pár kérdésből tájékoztató becslést ad a tetője méretére, felmérés nélkül, azonnal. A pontos árat továbbra is a helyszíni felmérés adja.</span>
+      </div>
+      <a class="btn btn-gold js-quote-agent" role="button" tabindex="0">Becslést kérek</a>
+    </div>
+    <div class="price-grid">
+      <div class="reveal">
+        <h3 style="font-size:1.4rem">Mitől függ az ár?</h3>
+        <ul class="price-factors">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> A tető mérete</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> A tető állapota</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> Megközelíthetőség</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> Elszállítandó mennyiség</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> Választott új héjazat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg> Bádogozás, kiegészítők</li>
+        </ul>
+      </div>
+      <div class="price-cards reveal">
+        <div class="price-card inc">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg> Az ajánlat tartalmazza</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Helyszíni felmérés</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Bontás és rakodás</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Elszállítás és hulladékkezelés</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Terület megtisztítása</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Új tetőfedés, ha kéri</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Dokumentáció és átadás</li>
+          </ul>
+        </div>
+        <div class="price-card exc">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v5M12 16h.01" stroke-linecap="round"/></svg> Amit előre jelzünk</h4>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14" stroke-linecap="round"/></svg> Előre nem látható tetőszerkezeti javítást a felmérésen jelzünk, és csak egyeztetés után végzünk el. <span class="draft">*egyeztetendő</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="price-foot reveal"><strong>Pontos árat a helyszíni felmérés után adunk</strong>, tételes ajánlatban. A felmérés ingyenes és kötelezettség nélküli.</p>
+  </div>
+</section>
+
+<!-- ===================== HOGYAN ZAJLIK ===================== -->
+<section class="process section-pad">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow on-dark center">Mi történik az ajánlatkérés után?</span>
+      <h2>Öt lépés a felméréstől az átadásig.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">1</div><h4>Felvesszük a kapcsolatot</h4><p>Egyeztetjük a tető állapotát és az igényeit.</p></div>
+      <div class="step reveal"><div class="step-num">2</div><h4>Ingyenes felmérés</h4><p>Megnézzük a tetőt a helyszínen, kötelezettség nélkül.</p></div>
+      <div class="step reveal"><div class="step-num">3</div><h4>Tételes ajánlat</h4><p>Érthető, tételes árajánlat a munka terjedelme alapján.</p></div>
+      <div class="step reveal"><div class="step-num">4</div><h4>Időpont egyeztetés</h4><p>Megbeszéljük a részleteket és az időpontot.</p></div>
+      <div class="step reveal"><div class="step-num">5</div><h4>Kivitelezés és átadás</h4><p>Bontás, elszállítás, új fedés, majd tiszta, kész tető.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MIÉRT MINKET ===================== -->
+<section class="why section-pad" id="miert">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-copy reveal">
+        <span class="eyebrow">Miért minket válasszon</span>
+        <h2 style="font-size:clamp(2rem,3.4vw,2.8rem);margin-top:18px">Bizonyítható állítások, nem marketingduma.</h2>
+        <ul class="why-list">
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Saját engedély a veszélyes hulladék kezelésére</h4><p>Nem alvállalkozónak adjuk tovább. Mi magunk vagyunk jogosultak rá.</p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Bontás és új tető egy kézből</h4><p>Nem kell külön csapatot keresnie az új tetőfedéshez.</p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Tételes ajánlat, számlával, szerződéssel</h4><p>Átlátható, ellenőrizhető feltételek. <span class="todo">*visszaigazolandó</span></p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Biztosítás és garancia</h4><p>Felelősségbiztosítás és garancia az új tetőfedésre. <span class="todo">*részletek egyeztetendők</span></p></div></li>
+        </ul>
+      </div>
+      <div class="stat-panel reveal">
+        <span class="eyebrow on-dark">Számokban</span>
+        <div class="stat-row">
+          <!-- TODO: valos szamok. A "..." helyere kerul a tenyleges ertek. -->
+          <div class="stat"><b class="fill">...</b><span>éve a szakmában</span></div>
+          <div class="stat"><b class="fill">...</b><span>elvégzett tetőmunka</span></div>
+          <div class="stat"><b>Aznap</b><span>válaszidő megkeresésre <span class="todo" style="font-size:.7rem">*</span></span></div>
+          <div class="stat"><b>100%</b><span>előírásos ártalmatlanítás</span></div>
+        </div>
+        <p class="stat-hint">A „..." értékek és a *-os állítások a valós adataiddal töltendők.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KINEK DOLGOZUNK ===================== -->
+<section class="audience section-pad">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow on-dark center">Kinek dolgozunk</span>
+      <h2>Nem csak magánházaknál.</h2>
+    </div>
+    <div class="aud-grid">
+      <article class="aud-card reveal">
+        <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11 12 3l9 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Magánszemélyeknek</h3><p>Otthonok és pihenőhelyek tetői, gondos, tiszta munkával.</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Családi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Nyaralók, hétvégi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Melléképületek, garázsok</li></ul>
+      </article>
+      <article class="aud-card reveal">
+        <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M8 8V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4" stroke-linejoin="round"/><path d="M8 13h.01M12 13h.01M16 13h.01" stroke-linecap="round"/></svg></div>
+        <h3>Vállalkozásoknak</h3><p>Nagyobb tetőfelületek ütemezetten, a működés zavarása nélkül.</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Telephelyek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Raktárak, csarnokok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Gazdasági épületek</li></ul>
+      </article>
+      <article class="aud-card reveal">
+        <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V10l7-4 7 4v11" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/><path d="M3 10h18" stroke-linecap="round"/></svg></div>
+        <h3>Önkormányzatoknak &amp; intézményeknek</h3><p>Hivatalos beszerzésekhez, dokumentációval és megfelelőséggel.</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Intézményi épületek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Önkormányzati ingatlanok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Közületi megbízások</li></ul>
+      </article>
+    </div>
+    <p class="aud-note reveal">Sok cég csak lakossági ügyfélre pozicionál. <strong>Mi céges és intézményi megbízásokat is vállalunk.</strong></p>
+  </div>
+</section>
+
+<!-- ===================== REFERENCIÁK ===================== -->
+<section class="refs section-pad">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow center">Referenciák</span>
+      <h2>Néhány elvégzett munkánk.</h2>
+      <p class="lead" style="margin:22px auto 0">Ide valós esetek kerülnek: település, kiindulási probléma, megoldás és eredmény, a fotókkal együtt.</p>
+    </div>
+    <div class="ref-grid">
+      <article class="ref-case reveal">
+        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
+        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[pl. 30+ éves azbesztpala]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[bontás + új cserépfedés]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[tiszta átadás]</span></div></div>
+      </article>
+      <article class="ref-case reveal">
+        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
+        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[gazdasági épület palateteje]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[bontás + elszállítás]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[dokumentációval]</span></div></div>
+      </article>
+      <article class="ref-case reveal">
+        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
+        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[intézményi tető azbesztpalával]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[teljes csere]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[hivatalos igazolással]</span></div></div>
+      </article>
+    </div>
+    <p class="rev-note reveal">Küldje meg a valós eseteit a fotókkal. <strong>Beemeljük őket ide.</strong></p>
+  </div>
+</section>
+
+<!-- ===================== KAPCSOLAT ===================== -->
+<section class="contact section-pad" id="kapcsolat">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-intro reveal">
+        <span class="eyebrow on-dark">Kapcsolatfelvétel</span>
+        <h2 style="font-size:clamp(2rem,3.4vw,2.8rem);margin-top:18px">Kérje az ingyenes helyszíni felmérést.</h2>
+        <p>Pár adat elég. Aznap visszajelzünk, és egyeztetünk egy időpontot. A felmérés kötelezettség nélküli.</p>
+        <ul class="contact-facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="tel:+36706252014">+36 70 625 2014</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="mailto:info@banacraft.hu">info@banacraft.hu</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> 1101 Budapest, Kőbányai út 43/A</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> Budapest és kb. 50 km-es körzete</li>
+        </ul>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="quoteForm" class="js-quote-form" novalidate>
+          <h3>Ingyenes felmérés kérése</h3>
+          <p class="form-int">Csak a lényeg. A többit a felmérésen egyeztetjük.</p>
+          <div class="field">
+            <label for="f-name">Név <span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" placeholder="Az Ön neve" required>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="f-phone">Telefonszám <span class="req">*</span></label><input type="tel" id="f-phone" name="phone" placeholder="+36 ..." required></div>
+            <div class="field"><label for="f-city">Település <span class="req">*</span></label><input type="text" id="f-city" name="city" placeholder="pl. Budapest, XVIII. ker." required></div>
+          </div>
+          <div class="field">
+            <label>Tető hozzávetőleges mérete <span class="req">*</span></label>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="size" value="~50 m² alatt" required><span>~50 m² alatt</span></label>
+              <label class="pill"><input type="radio" name="size" value="50–150 m²"><span>50–150 m²</span></label>
+              <label class="pill"><input type="radio" name="size" value="150 m² felett"><span>150 m² felett</span></label>
+              <label class="pill"><input type="radio" name="size" value="Nem tudom"><span>Nem tudom</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Miben segíthetünk? <span class="opt">(pár szó elég)</span></label>
+            <textarea id="f-msg" name="message" placeholder="Írja le röviden: milyen a tető állapota, mit szeretne..."></textarea>
+          </div>
+          <div class="field">
+            <label>Fotó a tetőről <span class="opt">(opcionális, sokat segít)</span></label>
+            <label class="file-drop" for="f-photo">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg>
+              <span class="file-drop-txt">Kattintson néhány fotó feltöltéséhez<small id="fileName" class="js-file-name">JPG vagy PNG, a tetőről készült képek</small></span>
+              <input type="file" id="f-photo" name="photo" accept="image/*" multiple>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg">Kérem az ingyenes felmérést</button>
+          <p class="form-consent">Nincs megrendelési kötelezettség. Adatait kizárólag a megkeresés megválaszolására használjuk.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Köszönjük!</h3>
+          <p>Megkaptuk a kérését, és aznap jelentkezünk a felmérés időpontjával.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GYIK ===================== -->
+<section class="faq section-pad" id="gyik">
+  <div class="wrap">
+    <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow center">Gyakori kérdések</span>
+      <h2>Amit a leggyakrabban kérdeznek.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button class="faq-q">Minden hullámpala azbesztes?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A régi azbesztcement hullámpalák jellemzően tartalmaznak azbesztet, de nem mindegyik. A felmérésen megnézzük a tetőt, és megmondjuk, mivel van dolgunk. <span class="draft">[Ha végeznek vagy szerveznek mintavételt, ide írható.]</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Honnan tudom, hogy az enyém azbesztes?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A kora és típusa alapján jó eséllyel megállapítható a helyszínen. Épp ezért érdemes a bolygatás előtt szakemberrel megnézetni, mi ezt ingyen megtesszük.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Mi történik a régi palával? Nekem kell intéznem?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Semmit nem kell intéznie. A bontást, a csomagolást, az elszállítást és az ártalmatlanítást is mi végezzük, engedéllyel rendelkező helyre. Konténert sem kell rendelnie.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Rá lehet fedni valamit a régi palára?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Azbeszttartalmú palánál a szakszerű megoldás az eltávolítás, nem a rajta hagyás. Épp azért, hogy a veszélyes anyag lekerüljön a tetőről. Mi a bontásra és cserére specializálódtunk.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Mennyibe kerül?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Ahány tető, annyiféle állapot és méret. Pontos árat a helyszíni felmérés után, tételes ajánlatban adunk. Fentebb megmutatjuk, mitől függ. Hívjon: <a href="tel:+36706252014">+36 70 625 2014</a>.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Mennyi ideig tart a munka?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A tető méretétől és a munkafolyamattól függ. <span class="draft">[Kitöltendő: pl. egy átlagos családi ház tetejét jellemzően ... nap alatt bontjuk és fedjük újra.]</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Otthon kell lennem a munka alatt?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner"><span class="draft">[Kitöltendő: pl. A felmérésnél és az átadásnál jó, ha ott van, a munka alatt viszont nem szükséges. Előre egyeztetjük.]</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Mi van, ha a tetőszerkezet is rossz?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A felmérésen ezt is megnézzük. Ha szerkezeti javítás kell, előre jelezzük, és csak egyeztetés után végezzük el. Nem érheti meglepetés a számlán. <span class="draft">*egyeztetendő, mit vállaltok ebből</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Adnak garanciát? Számlát, szerződést?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner"><span class="draft">[Kitöltendő: pontosan hány év garancia, mire vonatkozik (kivitelezés vagy anyag), számla és szerződés igen vagy nem.]</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Milyen új héjazattal dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Cseréppel, lemezzel vagy amit kér. A felmérésen átbeszéljük a lehetőségeket. <span class="draft">[Ha van ajánlott anyag, ide írható.]</span></div></div></div>
+      <div class="faq-item"><button class="faq-q">Mely településeken dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Budapesten és kb. 50 km-es körzetében, az agglomerációban. Ha bizonytalan, hogy a címe belefér-e, hívjon és megmondjuk.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <img class="brand-logo logo-light" src="logo-light.png" alt="Banacraft" width="660" height="200">
+        </div>
+        <p class="footer-about">Régi azbeszt hullámpala szakszerű bontása, előírásos elszállítása és új tetőfedés, engedéllyel, egy kézből. Budapest és kb. 50 km-es körzete.</p>
+      </div>
+      <div>
+        <h5>Menü</h5>
+        <ul>
+          <li><a href="#problema">A probléma</a></li>
+          <li><a href="#folyamat">Mit intézünk</a></li>
+          <li><a href="#azbeszt">Azbeszt kezelése</a></li>
+          <li><a href="#velemenyek">Vélemények</a></li>
+          <li><a href="#gyik">GYIK</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Kapcsolat</h5>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> 1101 Budapest, Kőbányai út 43/A</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="tel:+36706252014">+36 70 625 2014</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="mailto:info@banacraft.hu">info@banacraft.hu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Banacraft. Minden jog fenntartva.</span>
+      <span>Palatető bontás és csere · Budapest és vonzáskörzete</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobil CTA -->
+<div class="sticky-cta">
+  <a href="tel:+36706252014" class="btn btn-call" aria-label="Hívás">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <a href="#kapcsolat" class="btn btn-gold">Ingyenes felmérés</a>
+</div>
+
+<script>
+const header=document.getElementById('header');
+const onScroll=()=>header.classList.toggle('scrolled',window.scrollY>40);
+onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+const mnav=document.getElementById('mobileNav');
+document.getElementById('burger').addEventListener('click',()=>mnav.classList.add('open'));
+document.getElementById('closeNav').addEventListener('click',()=>mnav.classList.remove('open'));
+document.querySelectorAll('.mnav-link').forEach(a=>a.addEventListener('click',()=>mnav.classList.remove('open')));
+
+const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* Scrollspy - highlight the nav link for the section in view */
+const spyLinks=[...document.querySelectorAll('.nav-links a')];
+const spyMap=new Map(spyLinks.map(a=>[a.getAttribute('href').slice(1),a]));
+const spy=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){spyLinks.forEach(a=>a.classList.remove('active'));const l=spyMap.get(e.target.id);if(l)l.classList.add('active');}});
+},{rootMargin:'-45% 0px -50% 0px'});
+spyMap.forEach((_,id)=>{const s=document.getElementById(id);if(s)spy.observe(s);});
+
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q=item.querySelector('.faq-q'),a=item.querySelector('.faq-a');
+  q.addEventListener('click',()=>{
+    const open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+    if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+
+document.querySelectorAll('.js-quote-form').forEach(form=>{
+  const photo=form.querySelector('input[type=file]');
+  const fileName=form.querySelector('.js-file-name');
+  if(photo&&fileName){photo.addEventListener('change',()=>{fileName.textContent=photo.files.length?photo.files.length+' fájl kiválasztva':'JPG vagy PNG, a tetőről készült képek';});}
+  form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    if(!form.checkValidity()){form.reportValidity();return;}
+    form.style.display='none';
+    const succ=form.parentElement.querySelector('.form-success');
+    if(succ)succ.classList.add('show');
+  });
+});
+
+/* Quoting agent launcher. Wire up the real widget later by defining
+   window.openQuoteAgent = () => { ... open your chatbot ... };
+   Until then, CTAs gracefully fall back to the hero form. */
+function launchQuoteAgent(){
+  if(typeof window.openQuoteAgent==='function'){window.openQuoteAgent();return;}
+  const hf=document.querySelector('.hero-form');
+  if(hf){hf.scrollIntoView({behavior:'smooth',block:'center'});const first=hf.querySelector('input,textarea');if(first)setTimeout(()=>first.focus(),400);}
+}
+document.querySelectorAll('.js-quote-agent').forEach(el=>{
+  el.addEventListener('click',e=>{e.preventDefault();launchQuoteAgent();});
+  el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();launchQuoteAgent();}});
+});
+
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
