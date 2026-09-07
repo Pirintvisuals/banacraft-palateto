@@ -4,7 +4,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Palatető bontás és csere Budapesten | Banacraft</title>
-<meta name="description" content="Régi azbeszt hullámpala szakszerű bontása, előírásos elszállítása és új tetőfedés, egy kézből, engedéllyel. Önnek csak az időpontot kell egyeztetnie. Ingyenes felmérés Budapesten és vonzáskörzetében. +36 70 625 2014" />
+<meta name="description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+
+<!-- TODO DOMAIN: cseréld a https://banacraft.hu címet a végleges domainre MINDENHOL (canonical, og:url, twitter, JSON-LD @id/url/image). -->
+<link rel="canonical" href="https://banacraft.hu/" />
+<meta name="theme-color" content="#14251c" />
+<link rel="icon" type="image/webp" href="logo.webp" />
+<link rel="apple-touch-icon" href="logo-light.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="hu_HU" />
+<meta property="og:site_name" content="Banacraft" />
+<meta property="og:url" content="https://banacraft.hu/" />
+<meta property="og:title" content="Palatető bontás és csere Budapesten | Banacraft" />
+<meta property="og:description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+<meta property="og:image" content="https://banacraft.hu/logo-light.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Palatető bontás és csere Budapesten | Banacraft" />
+<meta name="twitter:description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+<meta name="twitter:image" content="https://banacraft.hu/logo-light.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -447,6 +465,77 @@ section{position:relative}
 }
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.pulse{animation:none}html{scroll-behavior:auto}}
 </style>
+
+<!-- Strukturált adat: helyi vállalkozás. TODO: engedélyszám/nyitvatartás/közösségi profilok kitöltése. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "@id": "https://banacraft.hu/#business",
+  "name": "Banacraft",
+  "url": "https://banacraft.hu/",
+  "logo": "https://banacraft.hu/logo-light.png",
+  "image": "https://banacraft.hu/logo-light.png",
+  "telephone": "+36706252014",
+  "email": "info@banacraft.hu",
+  "priceRange": "$$",
+  "description": "Régi azbeszt hullámpala szakszerű bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Budapest és kb. 50 km-es körzete.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kőbányai út 43/A",
+    "addressLocality": "Budapest",
+    "postalCode": "1101",
+    "addressCountry": "HU"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Budapest" },
+    {
+      "@type": "GeoCircle",
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 47.478, "longitude": 19.098 },
+      "geoRadius": "50000"
+    }
+  ],
+  "knowsAbout": ["azbesztmentesítés", "palatető bontás", "azbeszt hullámpala eltávolítás", "tetőfedés", "veszélyeshulladék-kezelés"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Minden hullámpala azbesztes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A régi azbesztcement hullámpalák jellemzően tartalmaznak azbesztet, de nem mindegyik. A felmérésen megnézzük a tetőt, és megmondjuk, mivel van dolgunk." }
+    },
+    {
+      "@type": "Question",
+      "name": "Honnan tudom, hogy az enyém azbesztes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A kora és típusa alapján jó eséllyel megállapítható a helyszínen. Érdemes a bolygatás előtt szakemberrel megnézetni, ezt mi ingyen megtesszük." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mi történik a régi palával? Nekem kell intéznem?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Semmit nem kell intéznie. A bontást, csomagolást, elszállítást és ártalmatlanítást is mi végezzük, engedéllyel rendelkező helyre. Konténert sem kell rendelnie." }
+    },
+    {
+      "@type": "Question",
+      "name": "Rá lehet fedni valamit a régi palára?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Azbeszttartalmú palánál a szakszerű megoldás az eltávolítás, nem a rajta hagyás, hogy a veszélyes anyag lekerüljön a tetőről. Mi a bontásra és cserére specializálódtunk." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mennyibe kerül?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Minden tető más állapotú és méretű. Pontos árat a helyszíni felmérés után, tételes ajánlatban adunk. Telefon: +36 70 625 2014." }
+    },
+    {
+      "@type": "Question",
+      "name": "Mely településeken dolgoznak?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Budapesten és kb. 50 km-es körzetében, az agglomerációban. Ha bizonytalan, hogy a címe belefér-e, hívjon és megmondjuk." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
