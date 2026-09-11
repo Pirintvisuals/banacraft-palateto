@@ -977,6 +977,7 @@ section{position:relative}
       <span class="eyebrow center">Referenciák</span>
       <h2>Néhány elvégzett munkánk.</h2>
       <p class="lead" style="margin:22px auto 0">Ide valós esetek kerülnek: település, kiindulási probléma, megoldás és eredmény, a fotókkal együtt.</p>
+      <p class="lead" style="margin:10px auto 0"><strong>Korábbi megbízóink között:</strong> MÁV, Pécel Város Önkormányzata, Táty Önkormányzata, Nemzeti Színház.</p>
     </div>
     <div class="ref-grid">
       <article class="ref-case reveal">
@@ -1183,5 +1184,14 @@ document.querySelectorAll('.js-quote-agent').forEach(el=>{
 
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
+
+<!-- ===================== AI ÁRBECSLŐ WIDGET ===================== -->
+<script>
+  window.BANACRAFT_CONFIG = {
+    apiUrl: "https://banacraft-palateto-agent-agent.vercel.app/api/faq-agent",
+    assetsUrl: "https://banacraft-palateto-agent-agent.vercel.app"
+  };
+</script>
+<script src="https://banacraft-palateto-agent-agent.vercel.app/widget.js"></script>
 </body>
 </html>
