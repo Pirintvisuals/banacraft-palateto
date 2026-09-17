@@ -1292,9 +1292,9 @@ document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 <script src="https://banacraft-palateto-agent-agent.vercel.app/widget.js"></script>
 <script>
-/* Mobilon azonnal megnyitjuk az asszisztenst (munkamenetenként egyszer). */
+/* Asztali gépen azonnal megnyitjuk az asszisztenst (munkamenetenként egyszer), mobilon nem. */
 (function(){
-  if(!window.matchMedia('(max-width: 960px)').matches) return;
+  if(window.matchMedia('(max-width: 960px)').matches) return;
   try{ if(sessionStorage.getItem('bcAutoOpened')) return; }catch(e){}
   var tries=0;
   (function tryOpen(){
