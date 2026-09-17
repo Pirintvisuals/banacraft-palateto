@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Palatető bontás és csere Budapesten | Banacraft</title>
-<meta name="description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+<title>Palatető csere és hulladékelszállítás engedéllyel | Banacraft</title>
+<meta name="description" content="Azbeszt hullámpala bontása és tetőcsere, valamint nagy mennyiségű lom, építési és veszélyes hulladék elszállítása országosan, engedéllyel. Ingyenes felmérés." />
 
 <!-- TODO DOMAIN: cseréld a https://banacraft.hu címet a végleges domainre MINDENHOL (canonical, og:url, twitter, JSON-LD @id/url/image). -->
 <link rel="canonical" href="https://banacraft.hu/" />
@@ -16,12 +16,12 @@
 <meta property="og:locale" content="hu_HU" />
 <meta property="og:site_name" content="Banacraft" />
 <meta property="og:url" content="https://banacraft.hu/" />
-<meta property="og:title" content="Palatető bontás és csere Budapesten | Banacraft" />
-<meta property="og:description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+<meta property="og:title" content="Palatető csere és hulladékelszállítás engedéllyel | Banacraft" />
+<meta property="og:description" content="Azbeszt hullámpala bontása és tetőcsere, valamint nagy mennyiségű lom, építési és veszélyes hulladék elszállítása országosan, engedéllyel. Ingyenes felmérés." />
 <meta property="og:image" content="https://banacraft.hu/logo-light.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Palatető bontás és csere Budapesten | Banacraft" />
-<meta name="twitter:description" content="Régi azbeszt hullámpala bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Ingyenes felmérés Budapesten és kb. 50 km-es körzetében." />
+<meta name="twitter:title" content="Palatető csere és hulladékelszállítás engedéllyel | Banacraft" />
+<meta name="twitter:description" content="Azbeszt hullámpala bontása és tetőcsere, valamint nagy mennyiségű lom, építési és veszélyes hulladék elszállítása országosan, engedéllyel. Ingyenes felmérés." />
 <meta name="twitter:image" content="https://banacraft.hu/logo-light.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -383,6 +383,24 @@ section{position:relative}
 .danger-note .btn{white-space:nowrap}
 .danger-src{max-width:820px;margin:18px auto 0;text-align:center;font-size:.8rem;color:var(--ink-muted);font-style:italic}
 
+/* Waste removal */
+.waste{background:var(--stone-50)}
+.waste-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.waste-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.waste-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);padding:24px;box-shadow:var(--shadow-sm)}
+.waste-card .w-ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:var(--pine-700);color:var(--gold-bright);margin-bottom:14px}
+.waste-card .w-ico svg{width:23px;height:23px}
+.waste-card h4{font-family:"Inter",sans-serif;font-size:1.04rem;font-weight:600;margin-bottom:6px}
+.waste-card p{font-size:.92rem;color:var(--ink-muted)}
+.waste-card.hl{border-color:rgba(201,138,52,.45);background:linear-gradient(180deg,#fff,var(--cream))}
+.waste-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.waste-badge{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:var(--pine-700);background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+.waste-badge svg{width:17px;height:17px;color:var(--gold-dark);flex:0 0 auto}
+.waste-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px}
+/* Client strip */
+.clients{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.client{font-family:"Fraunces",serif;font-size:1.05rem;font-weight:500;color:var(--pine-700);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 20px;box-shadow:var(--shadow-sm)}
+
 /* Booking */
 .booking{background:var(--stone-50)}
 .booking-card{margin-top:44px;border-radius:var(--r-lg);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-md);overflow:hidden;display:grid;grid-template-columns:.9fr 1.1fr}
@@ -448,7 +466,7 @@ section{position:relative}
   .burger{display:inline-flex}
   .hero-grid{grid-template-columns:1fr;gap:36px}
   .hero-card{max-width:420px}
-  .problem-grid,.why-grid,.contact-grid,.asb-grid,.price-grid,.ba-grid{grid-template-columns:1fr;gap:40px}
+  .problem-grid,.why-grid,.contact-grid,.asb-grid,.price-grid,.ba-grid,.waste-grid{grid-template-columns:1fr;gap:40px}
   .chain-flow,.aud-grid,.ref-grid,.rev-grid,.danger-grid{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr;gap:36px 18px}
   .steps::before,.step::after{display:none}
@@ -458,7 +476,7 @@ section{position:relative}
 }
 @media(max-width:600px){
   .wrap{padding:0 20px}
-  .chain-flow,.aud-grid,.ref-grid,.rev-grid,.steps,.stat-row,.field-row,.asb-steps,.price-factors,.danger-grid{grid-template-columns:1fr}
+  .chain-flow,.aud-grid,.ref-grid,.rev-grid,.steps,.stat-row,.field-row,.asb-steps,.price-factors,.danger-grid,.waste-cards{grid-template-columns:1fr}
   .hero-badge-row{flex-wrap:wrap}
   .footer-grid{grid-template-columns:1fr;gap:34px}
   .trust-inner{gap:14px}
@@ -479,7 +497,7 @@ section{position:relative}
   "telephone": "+36706252014",
   "email": "info@banacraft.hu",
   "priceRange": "$$",
-  "description": "Régi azbeszt hullámpala szakszerű bontása, elszállítása és új tetőfedés egy kézből, engedéllyel. Budapest és kb. 50 km-es körzete.",
+  "description": "Azbeszt hullámpala szakszerű bontása és tetőcsere, valamint nagy mennyiségű lom-, építési és veszélyes hulladék elszállítása országosan, engedéllyel. Lakásoknak, házaknak, cégeknek, intézményeknek és önkormányzatoknak.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Kőbányai út 43/A",
@@ -489,13 +507,14 @@ section{position:relative}
   },
   "areaServed": [
     { "@type": "City", "name": "Budapest" },
+    { "@type": "Country", "name": "Magyarország" },
     {
       "@type": "GeoCircle",
       "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 47.478, "longitude": 19.098 },
       "geoRadius": "50000"
     }
   ],
-  "knowsAbout": ["azbesztmentesítés", "palatető bontás", "azbeszt hullámpala eltávolítás", "tetőfedés", "veszélyeshulladék-kezelés"]
+  "knowsAbout": ["azbesztmentesítés", "palatető bontás", "azbeszt hullámpala eltávolítás", "tetőcsere", "tetőfedés", "lomtalanítás", "hulladékelszállítás", "veszélyes hulladék elszállítása", "illegálisan lerakott hulladék felszámolása", "üzem és csarnok kiürítése"]
 }
 </script>
 <script type="application/ld+json">
@@ -531,7 +550,22 @@ section{position:relative}
     {
       "@type": "Question",
       "name": "Mely településeken dolgoznak?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Budapesten és kb. 50 km-es körzetében, az agglomerációban. Ha bizonytalan, hogy a címe belefér-e, hívjon és megmondjuk." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Lom- és hulladékelszállítást országosan vállalunk. Palatető-cserét elsősorban Budapesten és környékén végzünk, nagyobb munkákat az ország más részein is. Hívjon, és megmondjuk." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vállalnak lom- és hulladékelszállítást is?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Igen, országosan. Lakások, házak, teljes intézmények, üzemek és csarnokok kiürítését, építési és veszélyes hulladék elszállítását is vállaljuk, a jogszabályban előírt módon." }
+    },
+    {
+      "@type": "Question",
+      "name": "Magánszemélyeknek is dolgoznak?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Igen. A nagy mennyiségű hulladék a specialitásunk, ezért leginkább nagyobb munkákat vállalunk, de magánszemélyek megkeresését is szívesen fogadjuk." }
+    },
+    {
+      "@type": "Question",
+      "name": "Önkormányzatoknak vállalják az illegálisan lerakott hulladék elszállítását?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Igen. Felszámoljuk az illegálisan lerakott hulladékot, a veszélyes összetevőket is beleértve, előírás szerinti elszállítással és kezeléssel." }
     }
   ]
 }
@@ -548,7 +582,8 @@ section{position:relative}
     </a>
     <nav class="nav-links" aria-label="Fő navigáció">
       <a href="#veszely">Miért veszélyes</a>
-      <a href="#folyamat">Mit intézünk</a>
+      <a href="#folyamat">Tetőcsere</a>
+      <a href="#hulladek">Hulladékszállítás</a>
       <a href="#ar">Árazás</a>
       <a href="#gyik">GYIK</a>
     </nav>
@@ -571,7 +606,8 @@ section{position:relative}
     <button id="closeNav" aria-label="Bezárás"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6 6 18M6 6l12 12" stroke-linecap="round"/></svg></button>
   </div>
   <a href="#veszely" class="mnav-link">Miért veszélyes</a>
-  <a href="#folyamat" class="mnav-link">Mit intézünk</a>
+  <a href="#folyamat" class="mnav-link">Tetőcsere</a>
+  <a href="#hulladek" class="mnav-link">Hulladékszállítás</a>
   <a href="#ar" class="mnav-link">Árazás</a>
   <a href="#gyik" class="mnav-link">GYIK</a>
   <a href="tel:+36706252014" class="mnav-link">+36 70 625 2014</a>
@@ -585,9 +621,9 @@ section{position:relative}
   <div class="wrap hero-inner">
     <div class="hero-grid">
       <div class="hero-copy reveal">
-        <span class="hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Budapest és vonzáskörzete</span>
+        <span class="hero-loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Budapest és országosan</span>
         <h1>Régi hullámpala?<br><em>Lebontjuk Ön helyett.</em></h1>
-        <p class="hero-sub">Bontás, elszállítás és új tetőfedés, engedéllyel, egy kézből.</p>
+        <p class="hero-sub">Bontás, elszállítás és új tetőfedés, engedéllyel, egy kézből. Nagy mennyiségű lom és hulladék elszállítása országosan.</p>
         <div class="hero-cta">
           <a href="tel:+36706252014" class="btn btn-ghost on-dark btn-lg">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -627,7 +663,15 @@ section{position:relative}
               <div class="field"><label for="h-city">Település <span class="req">*</span></label><input type="text" id="h-city" name="city" placeholder="pl. Budapest, XVIII." required></div>
             </div>
             <div class="field">
-              <label>Tető hozzávetőleges mérete <span class="req">*</span></label>
+              <label>Miben segíthetünk? <span class="req">*</span></label>
+              <div class="pills">
+                <label class="pill"><input type="radio" name="service" value="Palatető csere" required><span>Palatető csere</span></label>
+                <label class="pill"><input type="radio" name="service" value="Lom / hulladék elszállítás"><span>Lom / hulladék elszállítás</span></label>
+                <label class="pill"><input type="radio" name="service" value="Mindkettő"><span>Mindkettő</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label>Tető / terület hozzávetőleges mérete <span class="req">*</span></label>
               <div class="pills">
                 <label class="pill"><input type="radio" name="size" value="~50 m² alatt" required><span>~50 m² alatt</span></label>
                 <label class="pill"><input type="radio" name="size" value="50–150 m²"><span>50–150 m²</span></label>
@@ -655,7 +699,7 @@ section{position:relative}
     <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg> Engedéllyel a veszélyes hulladék kezelésére</div>
     <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Bontás, elszállítás és új tető egy kézből</div>
     <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4" stroke-linecap="round"/></svg> Ingyenes felmérés, kötelezettség nélkül</div>
-    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Budapest és kb. 50 km-es körzete</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> Lom- és hulladékelszállítás országosan</div>
   </div>
 </div>
 
@@ -828,6 +872,40 @@ section{position:relative}
   </div>
 </section>
 
+<!-- ===================== LOM- ÉS HULLADÉKELSZÁLLÍTÁS ===================== -->
+<section class="waste section-pad" id="hulladek">
+  <div class="wrap">
+    <div class="waste-grid">
+      <div class="section-head reveal">
+        <span class="eyebrow">Lom- és hulladékelszállítás országosan</span>
+        <h2>Minél nagyobb a munka, annál inkább nekünk való.</h2>
+        <p class="lead">Tapasztalattal és engedéllyel vállaljuk lom és hulladék elszállítását az ország egész területén: lakásokból, házakból, teljes intézményekből, üzemekből és önkormányzatoktól. A nagy mennyiségű hulladék a specialitásunk.</p>
+        <div class="asb-reassure">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p>Minden hulladékot <strong>a jogszabályban előírt módon</strong> szállítunk el és adunk át kezelésre. Vállalásainkat mindig pontosan és precízen teljesítjük.</p>
+        </div>
+        <div class="waste-badges">
+          <span class="waste-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> Országosan</span>
+          <span class="waste-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3Z" stroke-linejoin="round"/></svg> Engedéllyel</span>
+          <span class="waste-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h13l3 4v6H3z" stroke-linejoin="round"/><circle cx="7" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg> Nagy mennyiségben is</span>
+        </div>
+        <div class="waste-cta">
+          <a href="#kapcsolat" class="btn btn-gold">Elszállítást kérek</a>
+          <a href="tel:+36706252014" class="btn btn-ghost">+36 70 625 2014</a>
+        </div>
+      </div>
+      <div class="waste-cards reveal">
+        <div class="waste-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11 12 3l9 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Lakások, házak lomtalanítása</h4><p>Teljes kiürítés és elszállítás. Magánszemélyeknek is, a nagyobb munkák az erősségünk.</p></div>
+        <div class="waste-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V10l7-4 7 4v11" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/></svg></div><h4>Teljes intézmények kiürítése</h4><p>Hivatalok, közintézmények, középületek teljes kiürítése, ütemezetten.</p></div>
+        <div class="waste-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 21h20M4 21V9l5 3V9l5 3V9l6 4v8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Üzemek, csarnokok kiürítése</h4><p>Ipari és raktárépületek kiürítése, nagy tömegű hulladék elszállítása.</p></div>
+        <div class="waste-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 8v5M12 16h.01" stroke-linecap="round"/><path d="M10.3 3.9 2.4 18a2 2 0 0 0 1.7 3h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z" stroke-linejoin="round"/></svg></div><h4>Veszélyes hulladék elszállítása</h4><p>Előírás szerinti csomagolás, szállítás és átadás engedéllyel rendelkező kezelőnek.</p></div>
+        <div class="waste-card"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Illegálisan lerakott hulladék</h4><p>Önkormányzatoknak felszámoljuk az illegális lerakókat, a veszélyes összetevőket is.</p></div>
+        <div class="waste-card hl"><div class="w-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12 12 4l9 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 11v8h14v-8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Azbeszttartalmú tető</h4><p>Bontás, elszállítás és tetőcsere egy kézből. <a href="#folyamat" style="color:var(--gold-dark);font-weight:600">Részletek fent</a></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== CTA BAND ===================== -->
 <section class="cta-band">
   <div class="wrap reveal">
@@ -922,7 +1000,9 @@ section{position:relative}
         <h2 style="font-size:clamp(2rem,3.4vw,2.8rem);margin-top:18px">Bizonyítható állítások, nem marketingduma.</h2>
         <ul class="why-list">
           <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Saját engedély a veszélyes hulladék kezelésére</h4><p>Nem alvállalkozónak adjuk tovább. Mi magunk vagyunk jogosultak rá.</p></div></li>
-          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Bontás és új tető egy kézből</h4><p>Nem kell külön csapatot keresnie az új tetőfedéshez.</p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Bontás, elszállítás és új tető egy kézből</h4><p>Nem kell külön csapatot keresnie a szállításhoz vagy az új tetőfedéshez.</p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Nagy mennyiségű hulladék specialistái</h4><p>Teljes intézmények, üzemek, csarnokok kiürítése országosan, a jogszabályban előírt módon.</p></div></li>
+          <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Pontos, precíz teljesítés</h4><p>Vállalásainkat mindig a megbeszéltek szerint teljesítjük. Közintézmények és önkormányzatok is ránk bízták a munkájukat.</p></div></li>
           <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Tételes ajánlat, számlával, szerződéssel</h4><p>Átlátható, ellenőrizhető feltételek. <span class="todo">*visszaigazolandó</span></p></div></li>
           <li><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Biztosítás és garancia</h4><p>Felelősségbiztosítás és garancia az új tetőfedésre. <span class="todo">*részletek egyeztetendők</span></p></div></li>
         </ul>
@@ -947,26 +1027,26 @@ section{position:relative}
   <div class="wrap">
     <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
       <span class="eyebrow on-dark center">Kinek dolgozunk</span>
-      <h2>Nem csak magánházaknál.</h2>
+      <h2>Lakástól a teljes intézményig.</h2>
     </div>
     <div class="aud-grid">
       <article class="aud-card reveal">
         <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 11 12 3l9 8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 20v-6h4v6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Magánszemélyeknek</h3><p>Otthonok és pihenőhelyek tetői, gondos, tiszta munkával.</p>
-        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Családi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Nyaralók, hétvégi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Melléképületek, garázsok</li></ul>
+        <h3>Magánszemélyeknek</h3><p>Palatető-csere és lomtalanítás, gondos, tiszta munkával.</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Családi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Nyaralók, hétvégi házak</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Melléképületek, garázsok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Lakások, házak lomtalanítása</li></ul>
       </article>
       <article class="aud-card reveal">
         <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M8 8V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v4" stroke-linejoin="round"/><path d="M8 13h.01M12 13h.01M16 13h.01" stroke-linecap="round"/></svg></div>
-        <h3>Vállalkozásoknak</h3><p>Nagyobb tetőfelületek ütemezetten, a működés zavarása nélkül.</p>
-        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Telephelyek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Raktárak, csarnokok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Gazdasági épületek</li></ul>
+        <h3>Vállalkozásoknak</h3><p>Nagy tetőfelületek és nagy mennyiségű hulladék, ütemezetten, a működés zavarása nélkül.</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Telephelyek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Raktárak, csarnokok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Gazdasági épületek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Üzemek, csarnokok kiürítése</li></ul>
       </article>
       <article class="aud-card reveal">
         <div class="aud-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V10l7-4 7 4v11" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/><path d="M3 10h18" stroke-linecap="round"/></svg></div>
         <h3>Önkormányzatoknak &amp; intézményeknek</h3><p>Hivatalos beszerzésekhez, dokumentációval és megfelelőséggel.</p>
-        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Intézményi épületek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Önkormányzati ingatlanok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Közületi megbízások</li></ul>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Intézményi épületek</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Önkormányzati ingatlanok</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Teljes intézmények kiürítése</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Illegálisan lerakott hulladék felszámolása</li></ul>
       </article>
     </div>
-    <p class="aud-note reveal">Sok cég csak lakossági ügyfélre pozicionál. <strong>Mi céges és intézményi megbízásokat is vállalunk.</strong></p>
+    <p class="aud-note reveal">Magánszemélyeknek is dolgozunk, de <strong>a nagyobb munkák, céges és önkormányzati megbízások a specialitásunk.</strong></p>
   </div>
 </section>
 
@@ -975,9 +1055,15 @@ section{position:relative}
   <div class="wrap">
     <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
       <span class="eyebrow center">Referenciák</span>
-      <h2>Néhány elvégzett munkánk.</h2>
+      <h2>Közintézmények és önkormányzatok is ránk bízták.</h2>
       <p class="lead" style="margin:22px auto 0">Ide valós esetek kerülnek: település, kiindulási probléma, megoldás és eredmény, a fotókkal együtt.</p>
-      <p class="lead" style="margin:10px auto 0"><strong>Korábbi megbízóink között:</strong> MÁV, Pécel Város Önkormányzata, Táty Önkormányzata, Nemzeti Színház.</p>
+    </div>
+    <div class="clients reveal">
+      <span class="client">MÁV</span>
+      <span class="client">Nemzeti Színház</span>
+      <span class="client">Monor Város Önkormányzata</span>
+      <span class="client">Pécel Város Önkormányzata</span>
+      <span class="client">Tát Város Önkormányzata</span>
     </div>
     <div class="ref-grid">
       <article class="ref-case reveal">
@@ -1003,13 +1089,13 @@ section{position:relative}
     <div class="contact-grid">
       <div class="contact-intro reveal">
         <span class="eyebrow on-dark">Kapcsolatfelvétel</span>
-        <h2 style="font-size:clamp(2rem,3.4vw,2.8rem);margin-top:18px">Kérje az ingyenes helyszíni felmérést.</h2>
+        <h2 style="font-size:clamp(2rem,3.4vw,2.8rem);margin-top:18px">Kérjen ingyenes felmérést vagy elszállítást.</h2>
         <p>Pár adat elég. Aznap visszajelzünk, és egyeztetünk egy időpontot. A felmérés kötelezettség nélküli.</p>
         <ul class="contact-facts">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="tel:+36706252014">+36 70 625 2014</a></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="mailto:info@banacraft.hu">info@banacraft.hu</a></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22c4-3 7-6 7-11a7 7 0 0 0-14 0c0 5 3 8 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.5"/></svg> 1101 Budapest, Kőbányai út 43/A</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> Budapest és kb. 50 km-es körzete</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg> Hulladékszállítás országosan · Tetőcsere Budapest és környéke</li>
         </ul>
       </div>
 
@@ -1026,7 +1112,15 @@ section{position:relative}
             <div class="field"><label for="f-city">Település <span class="req">*</span></label><input type="text" id="f-city" name="city" placeholder="pl. Budapest, XVIII. ker." required></div>
           </div>
           <div class="field">
-            <label>Tető hozzávetőleges mérete <span class="req">*</span></label>
+            <label>Miben segíthetünk? <span class="req">*</span></label>
+            <div class="pills">
+              <label class="pill"><input type="radio" name="service" value="Palatető csere" required><span>Palatető csere</span></label>
+              <label class="pill"><input type="radio" name="service" value="Lom / hulladék elszállítás"><span>Lom / hulladék elszállítás</span></label>
+              <label class="pill"><input type="radio" name="service" value="Mindkettő"><span>Mindkettő</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label>Tető / terület hozzávetőleges mérete <span class="req">*</span></label>
             <div class="pills">
               <label class="pill"><input type="radio" name="size" value="~50 m² alatt" required><span>~50 m² alatt</span></label>
               <label class="pill"><input type="radio" name="size" value="50–150 m²"><span>50–150 m²</span></label>
@@ -1035,14 +1129,14 @@ section{position:relative}
             </div>
           </div>
           <div class="field">
-            <label for="f-msg">Miben segíthetünk? <span class="opt">(pár szó elég)</span></label>
-            <textarea id="f-msg" name="message" placeholder="Írja le röviden: milyen a tető állapota, mit szeretne..."></textarea>
+            <label for="f-msg">Részletek <span class="opt">(pár szó elég)</span></label>
+            <textarea id="f-msg" name="message" placeholder="Pl. a tető állapota, vagy milyen és mennyi hulladékot kell elszállítani..."></textarea>
           </div>
           <div class="field">
-            <label>Fotó a tetőről <span class="opt">(opcionális, sokat segít)</span></label>
+            <label>Fotó a tetőről vagy a hulladékról <span class="opt">(opcionális, sokat segít)</span></label>
             <label class="file-drop" for="f-photo">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg>
-              <span class="file-drop-txt">Kattintson néhány fotó feltöltéséhez<small id="fileName" class="js-file-name">JPG vagy PNG, a tetőről készült képek</small></span>
+              <span class="file-drop-txt">Kattintson néhány fotó feltöltéséhez<small id="fileName" class="js-file-name">JPG vagy PNG fotók</small></span>
               <input type="file" id="f-photo" name="photo" accept="image/*" multiple>
             </label>
           </div>
@@ -1077,7 +1171,10 @@ section{position:relative}
       <div class="faq-item"><button class="faq-q">Mi van, ha a tetőszerkezet is rossz?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A felmérésen ezt is megnézzük. Ha szerkezeti javítás kell, előre jelezzük, és csak egyeztetés után végezzük el. Nem érheti meglepetés a számlán. <span class="draft">*egyeztetendő, mit vállaltok ebből</span></div></div></div>
       <div class="faq-item"><button class="faq-q">Adnak garanciát? Számlát, szerződést?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner"><span class="draft">[Kitöltendő: pontosan hány év garancia, mire vonatkozik (kivitelezés vagy anyag), számla és szerződés igen vagy nem.]</span></div></div></div>
       <div class="faq-item"><button class="faq-q">Milyen új héjazattal dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Cseréppel, lemezzel vagy amit kér. A felmérésen átbeszéljük a lehetőségeket. <span class="draft">[Ha van ajánlott anyag, ide írható.]</span></div></div></div>
-      <div class="faq-item"><button class="faq-q">Mely településeken dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Budapesten és kb. 50 km-es körzetében, az agglomerációban. Ha bizonytalan, hogy a címe belefér-e, hívjon és megmondjuk.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Mely településeken dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Lom- és hulladékelszállítást országosan vállalunk. Palatető-cserét elsősorban Budapesten és környékén végzünk, nagyobb munkákat az ország más részein is. Hívjon, és megmondjuk.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Vállalnak lom- és hulladékelszállítást is?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Igen, országosan. Lakások, házak, teljes intézmények, üzemek és csarnokok kiürítését, építési és veszélyes hulladék elszállítását is vállaljuk, a jogszabályban előírt módon.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Magánszemélyeknek is dolgoznak?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Igen. A nagy mennyiségű hulladék a specialitásunk, ezért leginkább nagyobb munkákat vállalunk, de magánszemélyek megkeresését is szívesen fogadjuk.</div></div></div>
+      <div class="faq-item"><button class="faq-q">Önkormányzatoknak vállalják az illegálisan lerakott hulladék elszállítását?<span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Igen. Felszámoljuk az illegálisan lerakott hulladékot, a veszélyes összetevőket is beleértve, előírás szerinti elszállítással és kezeléssel.</div></div></div>
     </div>
   </div>
 </section>
@@ -1090,7 +1187,7 @@ section{position:relative}
         <div class="brand">
           <img class="brand-logo logo-light" src="logo-light.png" alt="Banacraft" width="660" height="200">
         </div>
-        <p class="footer-about">Régi azbeszt hullámpala szakszerű bontása, előírásos elszállítása és új tetőfedés, engedéllyel, egy kézből. Budapest és kb. 50 km-es körzete.</p>
+        <p class="footer-about">Azbeszt hullámpala bontása és tetőcsere, valamint nagy mennyiségű lom és hulladék elszállítása országosan, engedéllyel, a jogszabályban előírt módon.</p>
       </div>
       <div>
         <h5>Menü</h5>
@@ -1098,6 +1195,7 @@ section{position:relative}
           <li><a href="#problema">A probléma</a></li>
           <li><a href="#folyamat">Mit intézünk</a></li>
           <li><a href="#azbeszt">Azbeszt kezelése</a></li>
+          <li><a href="#hulladek">Hulladékelszállítás</a></li>
           <li><a href="#velemenyek">Vélemények</a></li>
           <li><a href="#gyik">GYIK</a></li>
         </ul>
@@ -1113,7 +1211,7 @@ section{position:relative}
     </div>
     <div class="footer-bottom">
       <span>&copy; <span id="year"></span> Banacraft. Minden jog fenntartva.</span>
-      <span>Palatető bontás és csere · Budapest és vonzáskörzete</span>
+      <span>Palatető csere · Lom- és hulladékelszállítás országosan</span>
     </div>
   </div>
 </footer>
@@ -1159,7 +1257,7 @@ document.querySelectorAll('.faq-item').forEach(item=>{
 document.querySelectorAll('.js-quote-form').forEach(form=>{
   const photo=form.querySelector('input[type=file]');
   const fileName=form.querySelector('.js-file-name');
-  if(photo&&fileName){photo.addEventListener('change',()=>{fileName.textContent=photo.files.length?photo.files.length+' fájl kiválasztva':'JPG vagy PNG, a tetőről készült képek';});}
+  if(photo&&fileName){photo.addEventListener('change',()=>{fileName.textContent=photo.files.length?photo.files.length+' fájl kiválasztva':'JPG vagy PNG fotók';});}
   form.addEventListener('submit',(e)=>{
     e.preventDefault();
     if(!form.checkValidity()){form.reportValidity();return;}
