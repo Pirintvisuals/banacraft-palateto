@@ -1291,5 +1291,21 @@ document.getElementById('year').textContent=new Date().getFullYear();
   };
 </script>
 <script src="https://banacraft-palateto-agent-agent.vercel.app/widget.js"></script>
+<script>
+/* Mobilon azonnal megnyitjuk az asszisztenst (munkamenetenként egyszer). */
+(function(){
+  if(!window.matchMedia('(max-width: 960px)').matches) return;
+  try{ if(sessionStorage.getItem('bcAutoOpened')) return; }catch(e){}
+  var tries=0;
+  (function tryOpen(){
+    if(window.BANACRAFT&&typeof window.BANACRAFT.open==='function'){
+      window.BANACRAFT.open();
+      try{ sessionStorage.setItem('bcAutoOpened','1'); }catch(e){}
+      return;
+    }
+    if(++tries<50) setTimeout(tryOpen,100);
+  })();
+})();
+</script>
 </body>
 </html>
