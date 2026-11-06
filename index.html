@@ -166,6 +166,7 @@ section{position:relative}
 .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
 .ba-item{}
 .ba-item .ph{aspect-ratio:16/11}
+.ba-item img{display:block;width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;border-radius:14px}
 .ba-label{margin-top:14px;display:flex;align-items:center;gap:10px;font-weight:600;color:var(--ink-soft)}
 .ba-label .tag{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--pine-600);padding:4px 10px;border-radius:999px}
 .ba-label .tag.after{background:var(--gold-dark)}
@@ -294,6 +295,9 @@ section{position:relative}
 .ref-case{background:#fff;border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-sm);display:flex;flex-direction:column}
 .ref-photo{aspect-ratio:4/3;border-bottom:1.5px dashed var(--stone-300)}
 .ref-photo .ph{height:100%;border:none;border-radius:0;background:var(--stone-100)}
+.ref-photo:has(img){position:relative;overflow:hidden}
+.ref-photo img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover}
+.ref-photo:has(img){border-bottom:none}
 .ref-body{padding:22px 24px}
 .ref-loc{font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-dark)}
 .ref-body h4{font-family:"Inter",sans-serif;font-size:1.08rem;font-weight:600;margin:8px 0}
@@ -782,11 +786,11 @@ section{position:relative}
     </div>
     <div class="ba-grid">
       <div class="ba-item reveal">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b><small>Előtte: régi azbeszt hullámpala</small></div>
+        <img src="img/regi-palateto.webp" alt="Régi, mohás azbeszt hullámpala tető" width="1200" height="900" loading="lazy" decoding="async">
         <div class="ba-label"><span class="tag">Előtte</span> Régi, elöregedett palatető</div>
       </div>
       <div class="ba-item reveal">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b><small>Utána: új, vízzáró tetőfedés</small></div>
+        <img src="img/uj-cserepteto.webp" alt="Családi ház új, piros cseréptetővel és tetőablakokkal" width="900" height="1200" loading="lazy" decoding="async">
         <div class="ba-label"><span class="tag after">Utána</span> Új, tiszta tetőfedés</div>
       </div>
     </div>
@@ -1056,7 +1060,7 @@ section{position:relative}
     <div class="section-head reveal center" style="text-align:center;max-width:640px;margin:0 auto">
       <span class="eyebrow center">Referenciák</span>
       <h2>Közintézmények és önkormányzatok is ránk bízták.</h2>
-      <p class="lead" style="margin:22px auto 0">Ide valós esetek kerülnek: település, kiindulási probléma, megoldás és eredmény, a fotókkal együtt.</p>
+      <p class="lead" style="margin:22px auto 0">Néhány fotó a munkáinkról: tetőcsere, új lécezés és új fedés.</p>
     </div>
     <div class="clients reveal">
       <span class="client">MÁV</span>
@@ -1067,16 +1071,16 @@ section{position:relative}
     </div>
     <div class="ref-grid">
       <article class="ref-case reveal">
-        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
-        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[pl. 30+ éves azbesztpala]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[bontás + új cserépfedés]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[tiszta átadás]</span></div></div>
+        <div class="ref-photo"><img src="img/uj-lecezes.webp" alt="Családi ház teteje új lécezéssel, létrákkal, munka közben" width="900" height="1200" loading="lazy" decoding="async"></div>
+        <div class="ref-body"><div class="ref-loc">Tetőcsere · munka közben</div><h4>Új lécezés a régi fedés helyén</h4><div class="ref-line"><span>A lebontott fedés után új lécezés készül, erre kerül az új héjazat.</span></div></div>
       </article>
       <article class="ref-case reveal">
-        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
-        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[gazdasági épület palateteje]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[bontás + elszállítás]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[dokumentációval]</span></div></div>
+        <div class="ref-photo"><img src="img/uj-lemezteto.webp" alt="Kollégánk új lemezfedésű tetőn dolgozik, háttérben a város" width="1200" height="900" loading="lazy" decoding="async"></div>
+        <div class="ref-body"><div class="ref-loc">Új tetőfedés</div><h4>Új lemezfedés</h4><div class="ref-line"><span>Vízzáró, tartós lemezfedés a régi tető helyén.</span></div></div>
       </article>
       <article class="ref-case reveal">
-        <div class="ref-photo"><div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M8 5l1.5-2h5L16 5" stroke-linejoin="round"/></svg><b>Itt lenne egy kép</b></div></div>
-        <div class="ref-body"><div class="ref-loc">Település · Munka típusa</div><h4>[Rövid cím a munkáról]</h4><div class="ref-line"><b>Probléma:</b> <span>[intézményi tető azbesztpalával]</span></div><div class="ref-line"><b>Megoldás:</b> <span>[teljes csere]</span></div><div class="ref-line"><b>Eredmény:</b> <span>[hivatalos igazolással]</span></div></div>
+        <div class="ref-photo"><img src="img/uj-faszerkezet-osb.webp" alt="Új faszerkezet áttetsző tetőfedéssel és OSB-borítással" width="1200" height="677" loading="lazy" decoding="async"></div>
+        <div class="ref-body"><div class="ref-loc">Tetőszerkezet</div><h4>Új faszerkezet, OSB-borítással</h4><div class="ref-line"><span>Ácsszerkezet és OSB-borítás - zsindelyfedés alá is ez kell.</span></div></div>
       </article>
     </div>
     <p class="rev-note reveal">Küldje meg a valós eseteit a fotókkal. <strong>Beemeljük őket ide.</strong></p>
