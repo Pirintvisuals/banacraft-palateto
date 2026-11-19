@@ -129,6 +129,11 @@ section{position:relative}
 .hero-stars{margin-top:16px;display:flex;align-items:center;gap:12px;font-size:.86rem;color:rgba(255,255,255,.7)}
 .hero-stars .stars{display:inline-flex;gap:2px;color:var(--gold-bright)}
 .hero-stars .stars svg{width:16px;height:16px}
+/* Hero background photo */
+.hero-bg{position:absolute;inset:0;z-index:-2;pointer-events:none}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(18,32,25,.9) 0%,rgba(18,32,25,.74) 45%,rgba(18,32,25,.45) 100%)}
+@media (max-width:960px){.hero-bg::after{background:rgba(18,32,25,.8)}}
 /* Hero photo placeholder */
 .hero-card{border:1px solid var(--line-on-dark);border-radius:var(--r-lg);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));padding:14px;box-shadow:var(--shadow-lg);backdrop-filter:blur(4px)}
 .ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;color:var(--ink-muted);background:var(--stone-100);border:1.5px dashed var(--stone-300);border-radius:14px;padding:26px}
@@ -622,6 +627,7 @@ section{position:relative}
 
 <!-- ===================== HERO ===================== -->
 <section class="hero">
+  <div class="hero-bg"><img src="img/uj-lemezteto.webp" alt="" width="1200" height="900" fetchpriority="high" decoding="async"></div>
   <div class="wrap hero-inner">
     <div class="hero-grid">
       <div class="hero-copy reveal">
